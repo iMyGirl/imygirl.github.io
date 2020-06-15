@@ -6,4 +6,5 @@ cuda各版本下载地址：<https://developer.nvidia.com/cuda-toolkit-archive>
 下载cudnn [百度网盘](https://pan.baidu.com/s/1ZjI3LDlLpRf_NSVsrj7WSw)  密码：[^iqqx]  该资源源于CSDN上的一位博主  
 [原帖地址](https://blog.csdn.net/qq_40605167/article/details/94772970)  
 
-anaconda下载[地址](https://repo.anaconda.com/archive/)[直接下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)
+anaconda下载[地址](https://repo.anaconda.com/archive/)
+anaconda3-4.2.0[直接下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)
