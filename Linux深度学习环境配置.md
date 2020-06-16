@@ -3,6 +3,8 @@
 cuda各版本下载地址：<https://developer.nvidia.com/cuda-toolkit-archive>  
 选用cuda8.0.44版本，下载地址：<https://developer.nvidia.com/cuda-80-download-archive>  
 
+<https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
+
 cudnn6[官方下载地址](https://developer.nvidia.com/rdp/cudnn-archive)
 
 下载cudnn7 [百度网盘](https://pan.baidu.com/s/1ZjI3LDlLpRf_NSVsrj7WSw)  密码：iqqx  该资源源于CSDN上的一位博主  
