@@ -10,3 +10,6 @@ anaconda下载[地址](https://repo.anaconda.com/archive/)
 anaconda3-4.2.0[直接下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)
 
 清华大学镜像下载站[地址](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
+
+注意tesouflow-gpu与cuda、cudnn的匹配问题[原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)
+![tf与cuda、cudnn匹配图](https://img-blog.csdnimg.cn/20190906111116792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdHRsZWhhZXM=,size_16,color_FFFFFF,t_70)
