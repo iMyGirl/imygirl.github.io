@@ -8,3 +8,5 @@ cuda各版本下载地址：<https://developer.nvidia.com/cuda-toolkit-archive>
 
 anaconda下载[地址](https://repo.anaconda.com/archive/)  
 anaconda3-4.2.0[直接下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)
+
+清华大学镜像下载站[地址](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
