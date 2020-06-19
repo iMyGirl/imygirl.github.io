@@ -16,3 +16,4 @@
 
 # 参考文献
 [1]MNIST 数据下载| TensorFlow 官方文档中文版<http://www.tensorfly.cn/tfdoc/tutorials/mnist_download.html>
+[2]极客学院团队出品·更新于 2018-11-28 11:00:43 MNIST 数据下载<https://wiki.jikexueyuan.com/project/tensorflow-zh/tutorials/mnist_download.html>
