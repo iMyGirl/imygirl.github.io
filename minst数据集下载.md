@@ -1,6 +1,6 @@
 # mnist数据集下载
 
-##input_data.read_data_sets报错连接问题
+`input_data.read_data_sets` 报错连接问题
 参见[TensorFlow学习——MNIST read_data_sets一直报连接超时](https://blog.csdn.net/c20081052/article/details/79101499)
 
 
