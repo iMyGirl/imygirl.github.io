@@ -4,7 +4,11 @@
 
 ## 写在前面
 
-务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！[原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)
+请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
+请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
+请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
+重要的事情说三遍，我个人在安装时因版本问题而踩了不少坑。
+[原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)
 ![tf与cuda、cudnn匹配图](https://img-blog.csdnimg.cn/20190906111116792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdHRsZWhhZXM=,size_16,color_FFFFFF,t_70)
 
 ## 步骤
