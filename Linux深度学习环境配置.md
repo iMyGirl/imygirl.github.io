@@ -16,13 +16,13 @@
 
 ## 下载连接
 ### cuda下载
-cuda各版本下载地址：<https://developer.nvidia.com/cuda-toolkit-archive>  
-选用cuda8.0.44版本，下载地址：<https://developer.nvidia.com/cuda-80-download-archive>  
+cuda各版本[官方下载地址](https://developer.nvidia.com/cuda-toolkit-archive)  
+选用cuda8.0.44版本[官方下载地址](https://developer.nvidia.com/cuda-80-download-archive)  
 ### cudnn下载
 cudnn6[官方下载地址](https://developer.nvidia.com/rdp/cudnn-archive)  
 下载cudnn7 [百度网盘](https://pan.baidu.com/s/1ZjI3LDlLpRf_NSVsrj7WSw)  密码：iqqx  该资源源于CSDN上的一位博主[原帖地址](https://blog.csdn.net/qq_40605167/article/details/94772970)  
 ### anaconda下载
-anaconda下载[地址](https://repo.anaconda.com/archive/)  
-anaconda3-4.2.0[直接下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)  
+anaconda[官方下载地址](https://repo.anaconda.com/archive/)  
+anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)  
 ### 其他链接
 清华大学镜像下载站[地址](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
