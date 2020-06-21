@@ -12,6 +12,9 @@
 ![tf与cuda、cudnn匹配图](https://img-blog.csdnimg.cn/20190906111116792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdHRsZWhhZXM=,size_16,color_FFFFFF,t_70)
 [原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)  
 
+
+
+
 ## 步骤
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 
@@ -26,5 +29,5 @@ cudnn6[官方下载地址](https://developer.nvidia.com/rdp/cudnn-archive)
 anaconda[官方下载地址](https://repo.anaconda.com/archive/)  
 anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)  
 ### 其他链接
-清华大学镜像下载站[地址](https://mirrors.tuna.tsinghua.edu.cn/)
+清华大学镜像下载站[地址](https://mirrors.tuna.tsinghua.edu.cn/)  
 腾讯云软件源[地址](https://mirrors.cloud.tencent.com/)
