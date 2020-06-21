@@ -21,6 +21,8 @@ nvidia-smi
 ps -f -p xxxxx #xxxxx代表进程号
 
 ```
+
+![查看GPU状态截图](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%9F%A5%E7%9C%8BGPU%E7%8A%B6%E6%80%81/Screenshot%20from%202020-06-21%2014-01-51_crop.png)
 /home/tzd/Pictures/Screenshot from 2020-06-21 14-01-51_crop.png
 # 参考资料：
 [1][ubuntu 查看服务器的GPU 谁（用户）在使用](https://blog.csdn.net/BlackLion_zhou/article/details/105566687)
