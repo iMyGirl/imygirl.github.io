@@ -14,15 +14,22 @@ nvidia-smi
     Memory Usage：显存的使用率；
     Volatile GPU-Util：浮动的GPU利用率；
     Compute M：计算模式；
-下边的Processes显示每块GPU上每个进程所使用的显存情况。
+下边的Processes显示每块GPU上每个进程所使用的显存情况。  
 
+----------------
 
 ```
 ps -f -p xxxxx #xxxxx代表进程号
 
 ```
+其中
+UID 表示用户ID
+PID 表示进程号
+PPID 表示父进程号
+TIME 表示执行时间
+CMD 表示执行命令
 
 ![查看GPU状态截图](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%9F%A5%E7%9C%8BGPU%E7%8A%B6%E6%80%81/Screenshot%20from%202020-06-21%2014-01-51_crop.png)
-/home/tzd/Pictures/Screenshot from 2020-06-21 14-01-51_crop.png
+
 # 参考资料：
 [1][ubuntu 查看服务器的GPU 谁（用户）在使用](https://blog.csdn.net/BlackLion_zhou/article/details/105566687)
