@@ -16,8 +16,11 @@
 
 
 ## 步骤
+参考[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)  
+
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 
+--------------------------------
 ## 下载连接
 ### cuda下载
 cuda各版本[官方下载地址](https://developer.nvidia.com/cuda-toolkit-archive)  
