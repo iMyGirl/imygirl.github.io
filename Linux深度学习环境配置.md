@@ -17,6 +17,8 @@
 
 
 ## 步骤
+查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus)  
+
 参考[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)  
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
@@ -35,3 +37,6 @@ anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 ### 其他链接
 清华大学镜像下载站[地址](https://mirrors.tuna.tsinghua.edu.cn/)  
 腾讯云软件源[地址](https://mirrors.cloud.tencent.com/)
+
+# 参考文献
+[1][查询GPU是否支持CUDA](https://blog.csdn.net/carson2005/article/details/46362277)
