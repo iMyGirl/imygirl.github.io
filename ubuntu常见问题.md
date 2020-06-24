@@ -11,4 +11,6 @@ sudo apt-get install exfat-fuse
 
 
 # 参考文献
-[1][ubuntu挂载移动硬盘出现错误 mount:unknown filesystem type exfat](https://www.jb51.net/os/Ubuntu/560860.html)
+[1][ubuntu挂载移动硬盘出现错误 mount:unknown filesystem type exfat](https://www.jb51.net/os/Ubuntu/560860.html)  
+[2][Linux下如何查看CPU信息, 包括位数和多核信息](https://blog.csdn.net/daniel_h1986/article/details/6318050)  
+[3][Ubuntu查看硬件配置](https://www.jianshu.com/p/7181f1d09339)
