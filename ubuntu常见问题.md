@@ -1,6 +1,5 @@
 1. 挂载移动硬盘出错：
-ubuntu挂载移动硬盘出现错误：mount:unknown filesystem type 'exfat'
-
+ubuntu挂载移动硬盘出现错误：mount:unknown filesystem type 'exfat'  
 处理方法如下：
 Ubuntu 13.10 或以上
 安装exfat-fuse:
