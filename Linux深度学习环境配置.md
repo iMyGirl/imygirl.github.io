@@ -17,9 +17,8 @@
 
 
 ## 步骤
-查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus)  
-
-参考[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)  
+(主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)）  
+### 1. 查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus) 
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 
