@@ -8,9 +8,10 @@
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
 重要的事情说三遍，我个人在安装时因版本问题而踩了不少坑。
-![tf_cuda](查看GPU状态/tf_cuda.png)
+![tf_cuda](查看GPU状态/tf_cuda.png)  
 
-                          [原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)  
+
+  [原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)  
                           
 
 
