@@ -18,8 +18,19 @@
 
 
 ## 步骤
-(主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)）  
+(主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统）  
 ### 1. 查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus) 
+### 2. 安装显卡驱动
+1. 开机进入X桌面后，键盘上按下 ctrl + alt + F1，进入命令行模式。ubuntu有命令行模式和X桌面模式，安装驱动必须在命令行模式进行；
+2. 输入用户名，回车，继续输入密码，回车确认；
+3. 禁用X桌面服务，命令行输入：sudo service lightdm stop，此命令将关闭桌面服务，现在已经不能进入桌面模式（重启电脑会重启桌面服务）；
+
+
+
+
+
+
+
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 
@@ -39,4 +50,5 @@ anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 腾讯云软件源[地址](https://mirrors.cloud.tencent.com/)
 
 # 参考文献
-[1][查询GPU是否支持CUDA](https://blog.csdn.net/carson2005/article/details/46362277)
+[1][Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)
+[2][查询GPU是否支持CUDA](https://blog.csdn.net/carson2005/article/details/46362277)
