@@ -27,7 +27,7 @@
 ```
 sudo service lightdm stop
 ```
-此命令将关闭桌面服务，现在已经不能进入桌面模式（重启电脑会重启桌面服务）；
+此命令将关闭桌面服务，现在已经不能进入桌面模式（重启电脑会重启桌面服务）；  
 4. 禁用nouveau驱动。Ubuntu系统集成的显卡驱动程序是nouveau，我们需要先将nouveau从linux内核卸载掉才能安装NVIDIA官方驱动。
 将nouveau添加到黑名单blacklist.conf中，linux启动时，就不会加载nouveau。接上步进行以下操作：
 ```
@@ -51,7 +51,7 @@ sudo chmod 644 /etc/modprobe.d/blacklist.conf # 将文件属性还原
 
 sudo update-initramfs -u # 更新一下内核
 ```
-重新启动计算机；
+重新启动计算机；  
 5. 安装nvidia驱动。
 
 
