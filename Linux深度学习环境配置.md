@@ -146,6 +146,7 @@ sudo ldconfig
 为什么安装cuda samples?
 一方面为了后面学习cuda使用，另一方面，可以检验cuda是否真的安装成功。如果cuda samples全部编译通过，没有一个Error（Warning忽略），那么就说明成功地安装了cuda。但如果没有通过编译，或者虽然最后一行显示PASS xxx，但是编译过程中有ERROR，请自行GOOGLE解决之后，再向下安装，否则失之毫厘谬以千里*！！！
 make时，请使用make -j，可以最大限度的使用cpu编译，加快编译的速度。
+
 ```
 # 切换到cuda-samples所在目录
 # 注意，换成自己的路径
@@ -159,6 +160,7 @@ cd ./bin/x86_64/linux/release
 ./deviceQuery 
 # 可以认真看看自行结果，它显示了你的NVIDIA显卡的相关信息。
 ```
+ 
  ./deviceQuery执行结果如下图所示：  
 
 ![./deviceQuery执行结果](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYwODI5MTAwODM1Njkz?x-oss-process=image/format,png)
@@ -225,30 +227,70 @@ export PATH=/home/ubuntu/anaconda3/bin:$PATH
 ```
 source ~/.bashrc
 ```
-使设置生效。其它详细命令可以查看以下链接：[Anaconda使用总结](http://blog.leanote.com/post/braveapple/Anaconda%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93)
+使设置生效。可以输入conda list python查看python版本，其它详细命令可以查看以下链接：[Anaconda使用总结](http://blog.leanote.com/post/braveapple/Anaconda%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93)
 
 
 
 
 ### 6. pip安装Tensorflow与keras
-1. 更换镜像源（可不进行更换，下载速度可能较慢）
+<1>. 更换pip镜像源（可不进行更换，下载速度可能较慢）  
 
-2. 安装指定版本的Tensorflow：
+cd到根目录，命令行输入：
+```sudo mkdir .pip
+```
+新建一个名为“.pip”的文件夹。创建pip配置文件：sudo vi ~/.pip/pip.conf，在vi界面中插入以下这句话：
+```
+[global]
+index-url = https://pypi.douban.com/simple
+```
+然后按esc键，按下“:wq”（注意不包含双引号，记得要包括冒号），然后回车退出。
+即可把pip源更新为国内豆瓣镜像，可参考这篇文章：[pip 更换软件镜像源](https://www.jianshu.com/p/785bb1f4700d)；
+
+<2>. 更换apt-get源（可不进行更换，下载速度可能较慢）  
+参考[Ubuntu 14.04 更换阿里云源](https://www.jianshu.com/p/c0ca2d4ea589)  
+备份旧版本：
+```
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak #备份
+```
+修改文件：
+```
+sudo vim /etc/apt/sources.list
+```
+在底部加入以下语句：
+```
+deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+```
+保存退出。
+
+<3>. 安装指定版本的Tensorflow：
 ```
 pip install tensorflow-gpu==1.4.0
 ```
 
-3. 安装指定版本的keras:
+<4>. 安装指定版本的keras:
 ```
 pip install keras==2.1.5
 ```
-4. 查看各数据包：
+<5>. 查看各数据包：
 ```
 pip list
 ```
 可看到现在环境下所安装的各数据包，应包含tensorflow、keras等。
 
-
+<6>. 打开Jupyter进行测试：
+打开终端，输入：
+```
+jupyter
+```
 
 
 
