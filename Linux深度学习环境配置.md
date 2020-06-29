@@ -344,7 +344,9 @@ sudo apt-get install pycharm-community
 ```
 配置pycharm，可参考以下链接：
 [Pycharm用鼠标滚轮控制字体大小 - 墨颜丶 - 博客园](https://www.cnblogs.com/moyand/p/9060890.html)  
-[]()  
+[Linux(ubuntu)下Pycharm配置python运行环境（编译器中导入虚拟环境）](https://blog.csdn.net/StupidAutofan/article/details/79199127)  
+[ubuntu下pycharm安装与使用](https://blog.csdn.net/m0_37673146/article/details/83541882)
+
 
   
     
