@@ -302,7 +302,7 @@ jupyter notebook
 [Ubuntu 卸载nvidia驱动](https://www.cnblogs.com/tangmiao/p/10470663.html)  
 [ubuntu16.04 下 卸载CUDA9.1](https://blog.csdn.net/weixin_40294256/article/details/79173174)  
 [pip版本降级](https://blog.csdn.net/CholenMine/article/details/81121879)  
-[]()
+[Ubuntu16.04下cuda和cudnn的卸载和升级](https://blog.csdn.net/wanzhen4330/article/details/81704474)
 []()
 []()
 []()
