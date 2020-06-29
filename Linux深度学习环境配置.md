@@ -320,4 +320,5 @@ anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [4][Ubuntu-安装-cuda7.0-单显卡-超详细教程](https://blog.csdn.net/xuezhisdc/article/details/47075401)  
 [5][caffe安装系列——安装cuda和cudnn](https://blog.csdn.net/xuezhisdc/article/details/48651003)  
 [6][Linux上vi(vim)编辑器使用教程](https://www.vpser.net/manage/vi.html)  
-[7][Linux系统下如何运行.sh文件](https://blog.csdn.net/hpf247/article/details/79190600)
+[7][Linux系统下如何运行.sh文件](https://blog.csdn.net/hpf247/article/details/79190600)  
+[8][Ubuntu 下 Jupyter 的使用](https://blog.csdn.net/qq_31347869/article/details/88049014)
