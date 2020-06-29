@@ -126,7 +126,7 @@ sudo ldconfig
 
 5. 安装CUDA SAMPLES
 为什么安装cuda samples?
-一方面为了后面学习cuda使用，另一方面，可以检验cuda是否真的安装成功。如果cuda samples全部编译通过，没有一个Error（Warning忽略），那么就说明成功地安装了cuda。但如果没有通过编译，或者虽然最后一行显示PASS***，但是编译过程中有ERROR，请自行GOOGLE解决之后，再向下安装，否则失之毫厘谬以千里*！！！
+一方面为了后面学习cuda使用，另一方面，可以检验cuda是否真的安装成功。如果cuda samples全部编译通过，没有一个Error（Warning忽略），那么就说明成功地安装了cuda。但如果没有通过编译，或者虽然最后一行显示PASS xxx，但是编译过程中有ERROR，请自行GOOGLE解决之后，再向下安装，否则失之毫厘谬以千里*！！！
 make时，请使用make -j，可以最大限度的使用cpu编译，加快编译的速度。
 ```
 # 切换到cuda-samples所在目录
@@ -141,7 +141,7 @@ cd ./bin/x86_64/linux/release
 ./deviceQuery 
 # 可以认真看看自行结果，它显示了你的NVIDIA显卡的相关信息。
 ```
-#  ./deviceQuery执行结果如下图所示：  
+ ./deviceQuery执行结果如下图所示：  
 
 ![./deviceQuery执行结果](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYwODI5MTAwODM1Njkz?x-oss-process=image/format,png)
 
@@ -151,7 +151,8 @@ cd ./bin/x86_64/linux/release
 
 ### 4. 安装cudnn
 1. 在Nvidia官网注册好帐号；
-2. 下载cudnn，[下载地址]()
+2. 下载cudnn，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cudnn%E4%B8%8B%E8%BD%BD)；
+
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 --------------------------------
