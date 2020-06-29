@@ -171,16 +171,16 @@ cd ./bin/x86_64/linux/release
 [原图博客地址](https://blog.csdn.net/xuezhisdc/article/details/48651003)  
 
 
-6. 验证nvcc  
+<6>. 验证nvcc  
 重新打开终端，输入命令*nvcc --version*，如果已经安装了，会显示版本号；如果没有安装，按照提示完成安装。  
 
 ---------------------------------------------------------------------
   
   
 ### 4. 安装cudnn
-1. 在Nvidia官网注册好帐号；
+<1>. 在Nvidia官网注册好帐号；
 
-2. 下载cudnn6，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cudnn%E4%B8%8B%E8%BD%BD)，安装cudnn比较简单，简单地说，就是复制几个文件：库文件和头文件。将cudnn的头文件复制到cuda安装路径的include路径下，将cudnn的库文件复制到cuda安装路径的lib64路径下。
+<2>. 下载cudnn6，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cudnn%E4%B8%8B%E8%BD%BD)，安装cudnn比较简单，简单地说，就是复制几个文件：库文件和头文件。将cudnn的头文件复制到cuda安装路径的include路径下，将cudnn的库文件复制到cuda安装路径的lib64路径下。
 ；  
 进入CUDNN存放的文件夹，输入：
 ```
@@ -197,7 +197,7 @@ sudo cp include/* /usr/local/cuda/include/
 P.S. 有一种说法，要建立软连接，但笔者在这一步有报错，参考<https://blog.csdn.net/wanzhen4330/article/details/81704474>，一开始安成了cudnn7，后由cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）  
 
 
-3. 测试cudnn是否安装成功
+<3>. 测试cudnn是否安装成功
 到目前为止，cudnn已经安装完了。但是，是否安装成功了呢，还得通过下面的cudnn sample测试：
 ```
 # 运行cudnn-sample-v2
@@ -212,10 +212,10 @@ make
   
   
 ### 5. 安装anaconda
-1. 下载anaconda(3.5.0.0)，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#anaconda%E4%B8%8B%E8%BD%BD)；  
+<1>. 下载anaconda(3.5.0.0)，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#anaconda%E4%B8%8B%E8%BD%BD)；  
 
 
-2. 命令行cd到安装包存放地址，输入：
+<2>. 命令行cd到安装包存放地址，输入：
 ```
 sh Anaconda3-5.0.0-Linux-x86_64.sh
 ```
@@ -223,7 +223,7 @@ sh Anaconda3-5.0.0-Linux-x86_64.sh
 
 
 
-2. 配置环境变量，命令行中输入：
+<3>. 配置环境变量，命令行中输入：
 ```
 sudo vi ~/.bashrc
 ```
@@ -310,16 +310,17 @@ jupyter notebook
     
     
 ### 7. 卸载以上部分数据包
-若因安装版本不匹配，需要卸载，可参考以下链接：
-[]()
+若因安装版本不匹配，如运行程序出现此帖中的报错[CUDA driver version is insufficient for CUDA runtime version 解决](https://www.cnblogs.com/wolflzc/p/9117291.html)，需要卸载数据包，更换另一版本，或有其他问题，可参考以下链接：  
+
+
 [ubuntu18.04 卸载Anaconda3](https://blog.csdn.net/vselfdom/article/details/88523543)  
 [Ubuntu16.04 安装 卸载 pip](https://blog.csdn.net/ZT7524/article/details/91633030)  
 [Ubuntu 卸载nvidia驱动](https://www.cnblogs.com/tangmiao/p/10470663.html)  
 [ubuntu16.04 下 卸载CUDA9.1](https://blog.csdn.net/weixin_40294256/article/details/79173174)  
 [pip版本降级](https://blog.csdn.net/CholenMine/article/details/81121879)  
 [Ubuntu16.04下cuda和cudnn的卸载和升级](https://blog.csdn.net/wanzhen4330/article/details/81704474)
-[]()
-[]()
+[关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案](https://www.cnblogs.com/yun6853992/p/9343816.html)
+[ubuntu: Unable to correct problems, you have held broken packages 解决方案](https://blog.csdn.net/u010733679/article/details/52021647/)
 []()
 []()
 
@@ -356,8 +357,8 @@ anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [9][Ubuntu安装anaconda 介绍、安装、配置](https://blog.csdn.net/haeasringnar/article/details/82079943)  
 [10][ubuntu显卡（NVIDIA）驱动以及对应版本cuda&cudnn安装](https://www.520mwx.com/view/56666)  
 [11][TensorFlow pip安装指定版本命令](https://blog.csdn.net/u012754806/article/details/77600322)  
-[][]()
-[][]()
+[12][tensorflow不同版本对应的Python 版本,cuDNN版本,CUDA版本](https://blog.csdn.net/littlehaes/article/details/100575694)
+[13][CUDA driver version is insufficient for CUDA runtime version 解决](https://www.cnblogs.com/wolflzc/p/9117291.html)
 [][]()
 [][]()
 [][]()
