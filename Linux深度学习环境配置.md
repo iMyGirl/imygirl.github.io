@@ -7,7 +7,7 @@
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
-重要的事情说三遍，我个人在安装时因版本问题而踩了不少坑。
+重要的事情说三遍，笔者在安装时因版本问题而踩了不少坑。
 ![tf_cuda](查看GPU状态/tf_cuda.png)  
 
 
@@ -54,7 +54,7 @@ sudo update-initramfs -u # 更新一下内核
 ```
 重新启动计算机；  
 
-5. 安装nvidia驱动。打开终端，使用如下命令添加Graphic Drivers PPA:
+5. 安装nvidia驱动（nvidia430）。打开终端，使用如下命令添加Graphic Drivers PPA:
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
@@ -84,7 +84,7 @@ sudo reboot # 重启
 sudo nvidia-smi
 ```
 ### 3. 安装cuda
-1. 下载cuda，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
+1. 下载cuda（8.0.44），[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
 2. 请先在Terminal中安装以下依赖库：
 ```
 sudo apt-get install freeglut3-dev
@@ -151,10 +151,26 @@ cd ./bin/x86_64/linux/release
 
 ### 4. 安装cudnn
 1. 在Nvidia官网注册好帐号；
-2. 下载cudnn，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cudnn%E4%B8%8B%E8%BD%BD)；
+2. 下载cudnn6，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cudnn%E4%B8%8B%E8%BD%BD)，安装cudnn比较简单，简单地说，就是复制几个文件：库文件和头文件。将cudnn的头文件复制到cuda安装路径的include路径下，将cudnn的库文件复制到cuda安装路径的lib64路径下。
+；  
+进入CUDNN存放的文件夹，输入：
+```
+tar -xzf cudnn-8.0-linux-x64-v6.0.tgz
+
+cd cuda
+
+sudo cp lib64/* /usr/local/cuda/lib64/
+
+sudo cp include/* /usr/local/cuda/include/
+
+```
+
+P.S. 有一种说法，要建立软连接，但笔者在这一步有报错，参考<https://blog.csdn.net/wanzhen4330/article/details/81704474>，一开始安成了cudnn7，后由cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）  
+
+### 5. 安装anaconda
 
 
-<https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
+
 --------------------------------
 ## 下载连接
 ### cuda下载
@@ -165,7 +181,7 @@ cudnn6[官方下载地址](https://developer.nvidia.com/rdp/cudnn-archive)
 cudnn7 [百度网盘](https://pan.baidu.com/s/1ZjI3LDlLpRf_NSVsrj7WSw)  密码：iqqx  (该资源源于CSDN上的一位博主：[原帖地址](https://blog.csdn.net/qq_40605167/article/details/94772970))
 ### anaconda下载
 anaconda[官方下载地址](https://repo.anaconda.com/archive/)  
-anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anaconda3-4.2.0-Linux-x86_64.sh)  
+anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anaconda3-5.0.0-Linux-x86_64.sh)  
 ### 其他链接
 清华大学镜像下载站[地址](https://mirrors.tuna.tsinghua.edu.cn/)  
 腾讯云软件源[地址](https://mirrors.cloud.tencent.com/)
