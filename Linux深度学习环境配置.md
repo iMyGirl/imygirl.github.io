@@ -326,8 +326,7 @@ jupyter notebook
 [关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案](https://www.cnblogs.com/yun6853992/p/9343816.html)  
 [ubuntu: Unable to correct problems, you have held broken packages 解决方案](https://blog.csdn.net/u010733679/article/details/52021647/)  
 [解决 ImportError: cannot import name 'tf_utils'](https://blog.csdn.net/roxxo/article/details/102551506)  
-
-[]()
+可选用第三方主题[主题列表 - ThemesMap](http://www.themesmap.com/theme.html?t=down&page=1)
   
     
     
@@ -342,7 +341,8 @@ sudo add-apt-repository ppa:mystic-mirage/pycharm # 通过命令添加PPA存储�
 sudo apt-get update # 社区版安装
 sudo apt-get install pycharm-community
 ```
-配置pycharm，可参考以下链接：
+配置pycharm，可参考以下链接：  
+
 [Pycharm用鼠标滚轮控制字体大小 - 墨颜丶 - 博客园](https://www.cnblogs.com/moyand/p/9060890.html)  
 [Linux(ubuntu)下Pycharm配置python运行环境（编译器中导入虚拟环境）](https://blog.csdn.net/StupidAutofan/article/details/79199127)  
 [ubuntu下pycharm安装与使用](https://blog.csdn.net/m0_37673146/article/details/83541882)
@@ -382,8 +382,8 @@ anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [12][tensorflow不同版本对应的Python 版本,cuDNN版本,CUDA版本](https://blog.csdn.net/littlehaes/article/details/100575694)  
 [13][CUDA driver version is insufficient for CUDA runtime version 解决](https://www.cnblogs.com/wolflzc/p/9117291.html)  
 [14][Ubuntu安装Tensorflow（GPU版)](https://blog.csdn.net/u014797226/article/details/80229887)
-[][]()
-[][]()
-[][]()
-[][]()
-[][]()
+[]()
+[]()
+[]()
+[]()
+[]()
