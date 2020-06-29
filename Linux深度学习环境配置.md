@@ -64,13 +64,13 @@ sudo apt-get update
 ubuntu-drivers devices
 ```
 如下图所示，选择一个合适的版本：
-[!driver_finding](https://img-blog.csdn.net/20170311120642732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvMTBrbQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+！[driver_finding](https://img-blog.csdn.net/20170311120642732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvMTBrbQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 [原图博客地址](https://blog.csdn.net/10km/article/details/61191230)  
 按ctrl+alt+F1进入tty文本模式，输入用户名和密码后：
 ```
 sudo service lightdm stop # 关闭(图形)桌面显示管理器LightDM
 
-sudo apt-get install nvidia-430 #以430为例，安装驱动
+sudo apt-get install nvidia-430 # 以430为例，安装驱动
 
 sudo reboot # 重启
 ```  
@@ -82,7 +82,12 @@ sudo nvidia-smi
 ```
 ### 3. 安装cuda
 1. 下载cuda，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
-2. 
+2. 安装。安装过程中会提示你进行一些确认操作，首先是接受服务条款，输入accept确认，然后会提示是否安装cuda tookit、cuda-example等，均输入Y进行确定。但请注意，当询问是否安装附带的驱动时，一定要选N！我们在第一部分已经安装好最新的驱动，附带的驱动是旧版本的而且会有问题，所以不要选择安装驱动。
+```
+cd path # cd指到下载路径
+
+sudo sh cuda_8.0.61_375.26_linux.run # 进行安装
+```
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 
