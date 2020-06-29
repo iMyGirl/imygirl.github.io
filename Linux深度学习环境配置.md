@@ -18,7 +18,7 @@
 
 
 ## 步骤
-(主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统）  
+(主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统,且计算机为x86架构） 
 ### 1. 查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus) 
 ### 2. 安装显卡驱动
 1. 开机进入X桌面后，键盘上按下 ctrl + alt + F1，进入命令行模式。ubuntu有命令行模式和X桌面模式，安装驱动必须在命令行模式进行；
@@ -54,10 +54,32 @@ sudo update-initramfs -u # 更新一下内核
 ```
 重新启动计算机；  
 
-5. 安装nvidia驱动。
+5. 安装nvidia驱动。打开终端，使用如下命令添加Graphic Drivers PPA:
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+```
+寻找合适的驱动版本:
+```
+ubuntu-drivers devices
+```
+如下图所示，选择一个合适的版本：
+[!driver_finding](https://img-blog.csdn.net/20170311120642732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvMTBrbQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+[原图博客地址](https://blog.csdn.net/10km/article/details/61191230)  
+按ctrl+alt+F1进入tty文本模式，输入用户名和密码后：
+```
+sudo service lightdm stop # 关闭(图形)桌面显示管理器LightDM
 
+sudo apt-get install nvidia-430 #以430为例，安装驱动
 
+sudo reboot # 重启
+```  
 
+6. 重启计算机，进入BIOS，在BIOS中禁用“安全启动”模式（secure boot），详情根据不同主板进行操作（否则第三方显卡驱动将无法被启动！）。
+禁用后，重启系统后，执行下面的命令查看驱动的安装状态：
+```
+sudo nvidia-smi
+```
 
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
