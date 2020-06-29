@@ -7,13 +7,17 @@
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
 请务必注意tesouflow-gpu与cuda、cudnn的匹配问题！！！  
-重要的事情说三遍，笔者在安装时因版本问题而踩了不少坑。
+重要的事情说三遍，笔者在安装时因版本问题而踩了不少坑。  
+
 ![tf_cuda](查看GPU状态/tf_cuda.png)  
 
 
   [原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)  
-                          
-
+                        
+  
+此处选用如图：
+![tf_cuda_pick](https://img-blog.csdn.net/20180512193931440)
+  [原图博客地址](https://blog.csdn.net/u014797226/article/details/80229887)
 
 
 
@@ -324,7 +328,12 @@ jupyter notebook
 [解决 ImportError: cannot import name 'tf_utils'](https://blog.csdn.net/roxxo/article/details/102551506)  
 
 []()
-
+  
+    
+    
+---------------------------------------------------------------------  
+  
+  
 ### 8. 安装pycharm
 若选用pycharm作为IDE，则可参考此帖[Ubuntu安装Pycharm](https://blog.csdn.net/tanghong1996/article/details/81701769)，此处以2016社区版为例。
 ```
@@ -333,6 +342,9 @@ sudo add-apt-repository ppa:mystic-mirage/pycharm # 通过命令添加PPA存储�
 sudo apt-get update # 社区版安装
 sudo apt-get install pycharm-community
 ```
+配置pycharm，可参考以下链接：
+[Pycharm用鼠标滚轮控制字体大小 - 墨颜丶 - 博客园](https://www.cnblogs.com/moyand/p/9060890.html)  
+[]()  
 
   
     
@@ -365,9 +377,9 @@ anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [9][Ubuntu安装anaconda 介绍、安装、配置](https://blog.csdn.net/haeasringnar/article/details/82079943)  
 [10][ubuntu显卡（NVIDIA）驱动以及对应版本cuda&cudnn安装](https://www.520mwx.com/view/56666)  
 [11][TensorFlow pip安装指定版本命令](https://blog.csdn.net/u012754806/article/details/77600322)  
-[12][tensorflow不同版本对应的Python 版本,cuDNN版本,CUDA版本](https://blog.csdn.net/littlehaes/article/details/100575694)
-[13][CUDA driver version is insufficient for CUDA runtime version 解决](https://www.cnblogs.com/wolflzc/p/9117291.html)
-[][]()
+[12][tensorflow不同版本对应的Python 版本,cuDNN版本,CUDA版本](https://blog.csdn.net/littlehaes/article/details/100575694)  
+[13][CUDA driver version is insufficient for CUDA runtime version 解决](https://www.cnblogs.com/wolflzc/p/9117291.html)  
+[14][Ubuntu安装Tensorflow（GPU版)](https://blog.csdn.net/u014797226/article/details/80229887)
 [][]()
 [][]()
 [][]()
