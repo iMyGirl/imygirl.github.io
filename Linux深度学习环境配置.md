@@ -82,12 +82,25 @@ sudo nvidia-smi
 ```
 ### 3. 安装cuda
 1. 下载cuda，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
-2. 安装。安装过程中会提示你进行一些确认操作，首先是接受服务条款，输入accept确认，然后会提示是否安装cuda tookit、cuda-example等，均输入Y进行确定。但请注意，当询问是否安装附带的驱动时，一定要选N！我们在第一部分已经安装好最新的驱动，附带的驱动是旧版本的而且会有问题，所以不要选择安装驱动。
+2. 请先在Terminal中安装以下依赖库：
+```
+sudo apt-get install freeglut3-dev
+sudo apt-get install build-essential
+sudo apt-get install libx11-dev
+sudo apt-get install libxmu-dev 
+sudo apt-get install libxi-dev 
+sudo apt-get install libglu1-mesa 
+sudo apt-get install libglu1-mesa-dev
+
+```
+3. 安装。安装过程中会提示你进行一些确认操作，首先是接受服务条款，输入accept确认，然后会提示是否安装cuda tookit、cuda-example等，均输入Y进行确定。但请注意，当询问是否安装附带的驱动时，一定要选N！我们在第一部分已经安装好最新的驱动，附带的驱动是旧版本的而且会有问题，所以不要选择安装驱动。
 ```
 cd path # cd指到下载路径
 
-sudo sh cuda_8.0.61_375.26_linux.run # 进行安装
+sudo sh cuda_8.0.44_linux.run # 进行安装
 ```
+注意：**…symbolic link …选项选择Yes，否则没有/usr/local/cuda/，只有/usr/local/cuda7.0/
+
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 
@@ -110,3 +123,4 @@ anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [1][Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)  
 [2][查询GPU是否支持CUDA](https://blog.csdn.net/carson2005/article/details/46362277)  
 [3][ubuntu16.04下NVIDIA GTX965M显卡驱动PPA安装](https://blog.csdn.net/10km/article/details/61191230)
+[4][Ubuntu-安装-cuda7.0-单显卡-超详细教程](https://blog.csdn.net/xuezhisdc/article/details/47075401)
