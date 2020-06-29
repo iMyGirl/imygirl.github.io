@@ -167,7 +167,56 @@ sudo cp include/* /usr/local/cuda/include/
 
 P.S. 有一种说法，要建立软连接，但笔者在这一步有报错，参考<https://blog.csdn.net/wanzhen4330/article/details/81704474>，一开始安成了cudnn7，后由cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）  
 
+3. 测试cudnn是否安装成功
+到目前为止，cudnn已经安装完了。但是，是否安装成功了呢，还得通过下面的cudnn sample测试：
+```
+# 运行cudnn-sample-v2
+tar –zxvf cudnn-sample-v2.tgz
+cd cudnn-sample-v2
+make
+./mnistCUDNN
+# 程序运行成功，说明cudnn安装成功。
+
+```
+
 ### 5. 安装anaconda
+1. 下载anaconda(3.5.0.0)，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#anaconda%E4%B8%8B%E8%BD%BD)；  
+2. 命令行cd到安装包存放地址，输入：
+```
+sh Anaconda3-5.0.0-Linux-x86_64.sh
+```
+安装anaconda，一路输入Y，确认操作就行；  
+
+2. 
+
+
+
+
+
+
+### 6. pip安装Tensorflow与keras
+1. 更换镜像源（可不进行更换，下载速度可能较慢）
+
+2. 安装指定版本的Tensorflow：
+```
+pip install tensorflow-gpu==1.4.0
+```
+
+3. 安装指定版本的keras:
+```
+pip install keras==2.1.5
+```
+4. 查看各数据包：
+```
+pip list
+```
+可看到现在环境下所安装的各数据包，应包含tensorflow、keras等。
+
+
+
+
+
+
 
 
 
@@ -191,4 +240,6 @@ anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [2][查询GPU是否支持CUDA](https://blog.csdn.net/carson2005/article/details/46362277)  
 [3][ubuntu16.04下NVIDIA GTX965M显卡驱动PPA安装](https://blog.csdn.net/10km/article/details/61191230)  
 [4][Ubuntu-安装-cuda7.0-单显卡-超详细教程](https://blog.csdn.net/xuezhisdc/article/details/47075401)  
-[5][caffe安装系列——安装cuda和cudnn](https://blog.csdn.net/xuezhisdc/article/details/48651003)
+[5][caffe安装系列——安装cuda和cudnn](https://blog.csdn.net/xuezhisdc/article/details/48651003)  
+[6][Linux上vi(vim)编辑器使用教程](https://www.vpser.net/manage/vi.html)  
+[7][https://blog.csdn.net/hpf247/article/details/79190600](https://blog.csdn.net/hpf247/article/details/79190600)
