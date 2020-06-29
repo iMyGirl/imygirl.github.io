@@ -18,7 +18,7 @@
 
 
 ## 步骤
-(主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统,且计算机为x86架构） 
+(主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统,且计算机为x86架构64位） 
 ### 1. 查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus) 
 ### 2. 安装显卡驱动
 1. 开机进入X桌面后，键盘上按下 ctrl + alt + F1，进入命令行模式。ubuntu有命令行模式和X桌面模式，安装驱动必须在命令行模式进行；
@@ -64,7 +64,7 @@ sudo apt-get update
 ubuntu-drivers devices
 ```
 如下图所示，选择一个合适的版本：
-！[driver_finding](https://img-blog.csdn.net/20170311120642732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvMTBrbQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![driver_finding](https://img-blog.csdn.net/20170311120642732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvMTBrbQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 [原图博客地址](https://blog.csdn.net/10km/article/details/61191230)  
 按ctrl+alt+F1进入tty文本模式，输入用户名和密码后：
 ```
@@ -99,9 +99,46 @@ cd path # cd指到下载路径
 
 sudo sh cuda_8.0.44_linux.run # 进行安装
 ```
-注意：**…symbolic link …选项选择Yes，否则没有/usr/local/cuda/，只有/usr/local/cuda7.0/
+注意： …symbolic link …选项选择Yes，否则没有/usr/local/cuda/，只有/usr/local/cuda8.0/
 
-
+4. 配置环境变量
+打开终端，在文件/etc/profile的最后添加以下内容：
+```
+PATH=/usr/local/cuda/bin:$PATH
+export PATH
+```
+保存后, 执行下列命令, 使环境变量立即生效：
+```
+source /etc/profile
+```
+在 /etc/ld.so.conf.d/新建文件 cuda.conf，并添加如下内容，进而保存：
+```
+/usr/local/cuda/lib64
+```
+执行下列命令使之立刻生效：
+```
+sudo ldconfig
+```
+打开终端，输入cuda，按2次”Tab键“，如果有弹出的命令提示，就说明环境配置成功。
+5. 安装CUDA SAMPLES
+为什么安装cuda samples?
+一方面为了后面学习cuda使用，另一方面，可以检验cuda是否真的安装成功。如果cuda samples全部编译通过，没有一个Error（Warning忽略），那么就说明成功地安装了cuda。但如果没有通过编译，或者虽然最后一行显示PASS***，但是编译过程中有ERROR，请自行GOOGLE解决之后，再向下安装，否则失之毫厘谬以千里*！！！
+make时，请使用make -j，可以最大限度的使用cpu编译，加快编译的速度。
+```
+# 切换到cuda-samples所在目录
+# 注意，换成自己的路径
+cd /home/xuezhisd/NVIDIA_CUDA-7.0_Samples
+# 编译 make （安装命令 sudo apt-get install cmake)
+make –j 
+# 编译完毕，切换release目录
+cd ./bin/x86_64/linux/release
+# 检验是否成功
+# 运行实例 ./deviceQuery
+./deviceQuery 
+# 可以认真看看自行结果，它显示了你的NVIDIA显卡的相关信息。
+```
+./deviceQuery执行结果如下图所示：
+![./deviceQuery执行结果](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYwODI5MTAwODM1Njkz?x-oss-process=image/format,png)
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 
 --------------------------------
@@ -124,3 +161,4 @@ anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [2][查询GPU是否支持CUDA](https://blog.csdn.net/carson2005/article/details/46362277)  
 [3][ubuntu16.04下NVIDIA GTX965M显卡驱动PPA安装](https://blog.csdn.net/10km/article/details/61191230)
 [4][Ubuntu-安装-cuda7.0-单显卡-超详细教程](https://blog.csdn.net/xuezhisdc/article/details/47075401)
+[5][caffe安装系列——安装cuda和cudnn](https://blog.csdn.net/xuezhisdc/article/details/48651003)
