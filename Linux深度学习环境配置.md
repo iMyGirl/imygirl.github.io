@@ -63,9 +63,12 @@ sudo apt-get update
 ```
 ubuntu-drivers devices
 ```
-如图所示，选择一个合适的版本：
-![driver_finding](https://img-blog.csdn.net/20170311120642732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvMTBrbQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+如图所示，选择一个合适的版本：  
+
+![driver_finding](https://img-blog.csdn.net/20170311120642732?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvMTBrbQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)  
+
 [原图博客地址](https://blog.csdn.net/10km/article/details/61191230)  
+
 按ctrl+alt+F1进入tty文本模式，输入用户名和密码后：
 ```
 sudo service lightdm stop # 关闭(图形)桌面显示管理器LightDM
@@ -128,7 +131,7 @@ make时，请使用make -j，可以最大限度的使用cpu编译，加快编译
 ```
 # 切换到cuda-samples所在目录
 # 注意，换成自己的路径
-cd /home/xuezhisd/NVIDIA_CUDA-7.0_Samples
+cd /home/xuezhisd/NVIDIA_CUDA-8.0_Samples
 # 编译 make （安装命令 sudo apt-get install cmake)
 make –j 
 # 编译完毕，切换release目录
@@ -138,7 +141,8 @@ cd ./bin/x86_64/linux/release
 ./deviceQuery 
 # 可以认真看看自行结果，它显示了你的NVIDIA显卡的相关信息。
 ```
-./deviceQuery执行结果如下图所示：
+#  ./deviceQuery执行结果如下图所示：  
+
 ![./deviceQuery执行结果](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYwODI5MTAwODM1Njkz?x-oss-process=image/format,png)
 
 [原图博客地址](https://blog.csdn.net/xuezhisdc/article/details/48651003)  
@@ -146,7 +150,8 @@ cd ./bin/x86_64/linux/release
 重新打开终端，输入命令*nvcc --version*，如果已经安装了，会显示版本号；如果没有安装，按照提示完成安装。
 
 ### 4. 安装cudnn
-
+1. 在Nvidia官网注册好帐号；
+2. 下载cudnn，[下载地址]()
 
 <https://blog.csdn.net/wanzhen4330/article/details/81704474>cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）
 --------------------------------
@@ -167,6 +172,6 @@ anaconda3-4.2.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 # 参考文献
 [1][Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)  
 [2][查询GPU是否支持CUDA](https://blog.csdn.net/carson2005/article/details/46362277)  
-[3][ubuntu16.04下NVIDIA GTX965M显卡驱动PPA安装](https://blog.csdn.net/10km/article/details/61191230)
+[3][ubuntu16.04下NVIDIA GTX965M显卡驱动PPA安装](https://blog.csdn.net/10km/article/details/61191230)  
 [4][Ubuntu-安装-cuda7.0-单显卡-超详细教程](https://blog.csdn.net/xuezhisdc/article/details/47075401)  
 [5][caffe安装系列——安装cuda和cudnn](https://blog.csdn.net/xuezhisdc/article/details/48651003)
