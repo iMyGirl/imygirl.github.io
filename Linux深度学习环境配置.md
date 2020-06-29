@@ -15,8 +15,10 @@
   [原图博客地址](https://blog.csdn.net/littlehaes/article/details/100575694)  
                         
   
-此处选用如图：
-![tf_cuda_pick](https://img-blog.csdn.net/20180512193931440)
+此处选用如图：  
+
+![tf_cuda_pick](https://img-blog.csdn.net/20180512193931440)  
+
   [原图博客地址](https://blog.csdn.net/u014797226/article/details/80229887)
 
 
@@ -326,6 +328,7 @@ jupyter notebook
 [关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案](https://www.cnblogs.com/yun6853992/p/9343816.html)  
 [ubuntu: Unable to correct problems, you have held broken packages 解决方案](https://blog.csdn.net/u010733679/article/details/52021647/)  
 [解决 ImportError: cannot import name 'tf_utils'](https://blog.csdn.net/roxxo/article/details/102551506)  
+  
 可选用第三方主题[主题列表 - ThemesMap](http://www.themesmap.com/theme.html?t=down&page=1)
   
     
