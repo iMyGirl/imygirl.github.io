@@ -20,9 +20,8 @@
 ## 步骤
 (主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统,且计算机为x86架构64位） 
 ### 1. 查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus) 
-
-
-
+  
+  
 ### 2. 安装显卡驱动
 <1>. 开机进入X桌面后，键盘上按下 ctrl + alt + F1，进入命令行模式。ubuntu有命令行模式和X桌面模式，安装驱动必须在命令行模式进行；
 
@@ -93,7 +92,7 @@ sudo reboot # 重启
 ```
 sudo nvidia-smi
 ```
-
+---------------------------------------------------------------------
 
 ### 3. 安装cuda
 <1>. 下载cuda（8.0.44），[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
@@ -118,9 +117,10 @@ cd path # cd指到下载路径
 
 sudo sh cuda_8.0.44_linux.run # 进行安装
 ```
-注意： …symbolic link …选项选择Yes，否则没有/usr/local/cuda/，只有/usr/local/cuda8.0/
-
-
+注意： …symbolic link …选项选择Yes，否则没有/usr/local/cuda/，只有/usr/local/cuda8.0/  
+  
+    
+    
 <4>. 配置环境变量
 打开终端，在文件/etc/profile的最后添加以下内容：
 ```
@@ -140,8 +140,10 @@ source /etc/profile
 sudo ldconfig
 ```
 打开终端，输入cuda，按2次”Tab键“，如果有弹出的命令提示，就说明环境配置成功。
+  
+    
+    
 
----------------------------------------------------------------------
 
 <5>. 安装CUDA SAMPLES
 为什么安装cuda samples?
@@ -170,8 +172,11 @@ cd ./bin/x86_64/linux/release
 
 
 6. 验证nvcc  
-重新打开终端，输入命令*nvcc --version*，如果已经安装了，会显示版本号；如果没有安装，按照提示完成安装。
+重新打开终端，输入命令*nvcc --version*，如果已经安装了，会显示版本号；如果没有安装，按照提示完成安装。  
 
+---------------------------------------------------------------------
+  
+  
 ### 4. 安装cudnn
 1. 在Nvidia官网注册好帐号；
 
@@ -203,7 +208,9 @@ make
 # 程序运行成功，说明cudnn安装成功。
 
 ```
-
+---------------------------------------------------------------------
+  
+  
 ### 5. 安装anaconda
 1. 下载anaconda(3.5.0.0)，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#anaconda%E4%B8%8B%E8%BD%BD)；  
 
@@ -230,14 +237,17 @@ source ~/.bashrc
 ```
 使设置生效。可以输入conda list python查看python版本，其它详细命令可以查看以下链接：[Anaconda使用总结](http://blog.leanote.com/post/braveapple/Anaconda%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93)
 
-
-
-
+  
+  
+---------------------------------------------------------------------
+  
+  
 ### 6. pip安装Tensorflow与keras
 <1>. 更换pip镜像源（可不进行更换，下载速度可能较慢）  
 
 cd到根目录，命令行输入：
-```sudo mkdir .pip
+```
+sudo mkdir .pip
 ```
 新建一个名为“.pip”的文件夹。创建pip配置文件：sudo vi ~/.pip/pip.conf，在vi界面中插入以下这句话：
 ```
@@ -292,8 +302,13 @@ pip list
 ```
 jupyter notebook
 ```
-进入jupyter后，进行测试，看是否是利用GPU计算深度学习的例程。这里附一案例链接：[Regressor 回归](https://morvanzhou.github.io/tutorials/machine-learning/keras/2-1-regressor/)[代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/4-regressor_example.py)
-
+进入jupyter后，进行测试，看是否是利用GPU计算深度学习的例程。这里附一案例链接：[Regressor 回归](https://morvanzhou.github.io/tutorials/machine-learning/keras/2-1-regressor/)[代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/4-regressor_example.py)  
+  
+    
+---------------------------------------------------------------------
+  
+    
+    
 ### 7. 卸载以上部分数据包
 若因安装版本不匹配，需要卸载，可参考以下链接：
 []()
@@ -310,7 +325,10 @@ jupyter notebook
 
 
 
-
+  
+    
+      
+      
 --------------------------------
 ## 下载连接
 ### cuda下载
