@@ -24,20 +24,20 @@
 
 
 ### 2. 安装显卡驱动
-1. 开机进入X桌面后，键盘上按下 ctrl + alt + F1，进入命令行模式。ubuntu有命令行模式和X桌面模式，安装驱动必须在命令行模式进行；
+<1>. 开机进入X桌面后，键盘上按下 ctrl + alt + F1，进入命令行模式。ubuntu有命令行模式和X桌面模式，安装驱动必须在命令行模式进行；
 
 
-2. 输入用户名，回车，继续输入密码，回车确认；
+<2>. 输入用户名，回车，继续输入密码，回车确认；
 
 
-3. 禁用X桌面服务，命令行输入：
+<3>. 禁用X桌面服务，命令行输入：
 ```
 sudo service lightdm stop
 ```
 此命令将关闭桌面服务，现在已经不能进入桌面模式（重启电脑会重启桌面服务）； 
 
 
-4. 禁用nouveau驱动。Ubuntu系统集成的显卡驱动程序是nouveau，我们需要先将nouveau从linux内核卸载掉才能安装NVIDIA官方驱动。
+<4>. 禁用nouveau驱动。Ubuntu系统集成的显卡驱动程序是nouveau，我们需要先将nouveau从linux内核卸载掉才能安装NVIDIA官方驱动。
 将nouveau添加到黑名单blacklist.conf中，linux启动时，就不会加载nouveau。接上步进行以下操作：
 ```
 ll /etc/modprobe.d/blacklist.conf # 查看属性
@@ -63,7 +63,7 @@ sudo update-initramfs -u # 更新一下内核
 重新启动计算机；  
 
 
-5. 安装nvidia驱动（nvidia430）。打开终端，使用如下命令添加Graphic Drivers PPA:
+<5>. 安装nvidia驱动（nvidia430）。打开终端，使用如下命令添加Graphic Drivers PPA:
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
@@ -88,7 +88,7 @@ sudo reboot # 重启
 ```  
 
 
-6. 重启计算机，进入BIOS，在BIOS中禁用“安全启动”模式（secure boot），详情根据不同主板进行操作（否则第三方显卡驱动将无法被启动！）。
+<6>. 重启计算机，进入BIOS，在BIOS中禁用“安全启动”模式（secure boot），详情根据不同主板进行操作（否则第三方显卡驱动将无法被启动！）。
 禁用后，重启系统后，执行下面的命令查看驱动的安装状态：
 ```
 sudo nvidia-smi
@@ -96,10 +96,10 @@ sudo nvidia-smi
 
 
 ### 3. 安装cuda
-1. 下载cuda（8.0.44），[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
+<1>. 下载cuda（8.0.44），[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
 
 
-2. 请先在Terminal中安装以下依赖库：
+<2>. 请先在Terminal中安装以下依赖库：
 ```
 sudo apt-get install freeglut3-dev
 sudo apt-get install build-essential
@@ -112,7 +112,7 @@ sudo apt-get install libglu1-mesa-dev
 ```
 
 
-3. 安装。安装过程中会提示你进行一些确认操作，首先是接受服务条款，输入accept确认，然后会提示是否安装cuda tookit、cuda-example等，均输入Y进行确定。但请注意，当询问是否安装附带的驱动时，一定要选N！我们在第一部分已经安装好最新的驱动，附带的驱动是旧版本的而且会有问题，所以不要选择安装驱动。
+<3>. 安装。安装过程中会提示你进行一些确认操作，首先是接受服务条款，输入accept确认，然后会提示是否安装cuda tookit、cuda-example等，均输入Y进行确定。但请注意，当询问是否安装附带的驱动时，一定要选N！我们在第一部分已经安装好最新的驱动，附带的驱动是旧版本的而且会有问题，所以不要选择安装驱动。
 ```
 cd path # cd指到下载路径
 
@@ -121,7 +121,7 @@ sudo sh cuda_8.0.44_linux.run # 进行安装
 注意： …symbolic link …选项选择Yes，否则没有/usr/local/cuda/，只有/usr/local/cuda8.0/
 
 
-4. 配置环境变量
+<4>. 配置环境变量
 打开终端，在文件/etc/profile的最后添加以下内容：
 ```
 PATH=/usr/local/cuda/bin:$PATH
@@ -139,10 +139,11 @@ source /etc/profile
 ```
 sudo ldconfig
 ```
-打开终端，输入cuda，按2次”Tab键“，如果有弹出的命令提示，就说明环境配置成功。  
+打开终端，输入cuda，按2次”Tab键“，如果有弹出的命令提示，就说明环境配置成功。
 
+---------------------------------------------------------------------
 
-5. 安装CUDA SAMPLES
+<5>. 安装CUDA SAMPLES
 为什么安装cuda samples?
 一方面为了后面学习cuda使用，另一方面，可以检验cuda是否真的安装成功。如果cuda samples全部编译通过，没有一个Error（Warning忽略），那么就说明成功地安装了cuda。但如果没有通过编译，或者虽然最后一行显示PASS xxx，但是编译过程中有ERROR，请自行GOOGLE解决之后，再向下安装，否则失之毫厘谬以千里*！！！
 make时，请使用make -j，可以最大限度的使用cpu编译，加快编译的速度。
@@ -296,8 +297,16 @@ jupyter notebook
 ### 7. 卸载以上部分数据包
 若因安装版本不匹配，需要卸载，可参考以下链接：
 []()
+[ubuntu18.04 卸载Anaconda3](https://blog.csdn.net/vselfdom/article/details/88523543)
+[Ubuntu16.04 安装 卸载 pip](https://blog.csdn.net/ZT7524/article/details/91633030)
+[Ubuntu 卸载nvidia驱动](https://www.cnblogs.com/tangmiao/p/10470663.html)
+[ubuntu16.04 下 卸载CUDA9.1](https://blog.csdn.net/weixin_40294256/article/details/79173174)
+[pip版本降级](https://blog.csdn.net/CholenMine/article/details/81121879)
 []()
-
+[]()
+[]()
+[]()
+[]()
 
 
 
@@ -326,3 +335,14 @@ anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [6][Linux上vi(vim)编辑器使用教程](https://www.vpser.net/manage/vi.html)  
 [7][Linux系统下如何运行.sh文件](https://blog.csdn.net/hpf247/article/details/79190600)  
 [8][Ubuntu 下 Jupyter 的使用](https://blog.csdn.net/qq_31347869/article/details/88049014)
+[9][Ubuntu安装anaconda 介绍、安装、配置](https://blog.csdn.net/haeasringnar/article/details/82079943)
+[10][ubuntu显卡（NVIDIA）驱动以及对应版本cuda&cudnn安装](https://www.520mwx.com/view/56666)
+[][]()
+[][]()
+[][]()
+[][]()
+[][]()
+[][]()
+[][]()
+[][]()
+[][]()
