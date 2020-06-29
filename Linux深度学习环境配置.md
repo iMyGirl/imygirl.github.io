@@ -20,14 +20,22 @@
 ## 步骤
 (主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统,且计算机为x86架构64位） 
 ### 1. 查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus) 
+
+
+
 ### 2. 安装显卡驱动
 1. 开机进入X桌面后，键盘上按下 ctrl + alt + F1，进入命令行模式。ubuntu有命令行模式和X桌面模式，安装驱动必须在命令行模式进行；
+
+
 2. 输入用户名，回车，继续输入密码，回车确认；
+
+
 3. 禁用X桌面服务，命令行输入：
 ```
 sudo service lightdm stop
 ```
 此命令将关闭桌面服务，现在已经不能进入桌面模式（重启电脑会重启桌面服务）； 
+
 
 4. 禁用nouveau驱动。Ubuntu系统集成的显卡驱动程序是nouveau，我们需要先将nouveau从linux内核卸载掉才能安装NVIDIA官方驱动。
 将nouveau添加到黑名单blacklist.conf中，linux启动时，就不会加载nouveau。接上步进行以下操作：
@@ -54,6 +62,7 @@ sudo update-initramfs -u # 更新一下内核
 ```
 重新启动计算机；  
 
+
 5. 安装nvidia驱动（nvidia430）。打开终端，使用如下命令添加Graphic Drivers PPA:
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -78,13 +87,18 @@ sudo apt-get install nvidia-430 # 以430为例，安装驱动
 sudo reboot # 重启
 ```  
 
+
 6. 重启计算机，进入BIOS，在BIOS中禁用“安全启动”模式（secure boot），详情根据不同主板进行操作（否则第三方显卡驱动将无法被启动！）。
 禁用后，重启系统后，执行下面的命令查看驱动的安装状态：
 ```
 sudo nvidia-smi
 ```
+
+
 ### 3. 安装cuda
 1. 下载cuda（8.0.44），[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cuda%E4%B8%8B%E8%BD%BD);
+
+
 2. 请先在Terminal中安装以下依赖库：
 ```
 sudo apt-get install freeglut3-dev
@@ -96,6 +110,8 @@ sudo apt-get install libglu1-mesa
 sudo apt-get install libglu1-mesa-dev
 
 ```
+
+
 3. 安装。安装过程中会提示你进行一些确认操作，首先是接受服务条款，输入accept确认，然后会提示是否安装cuda tookit、cuda-example等，均输入Y进行确定。但请注意，当询问是否安装附带的驱动时，一定要选N！我们在第一部分已经安装好最新的驱动，附带的驱动是旧版本的而且会有问题，所以不要选择安装驱动。
 ```
 cd path # cd指到下载路径
@@ -103,6 +119,7 @@ cd path # cd指到下载路径
 sudo sh cuda_8.0.44_linux.run # 进行安装
 ```
 注意： …symbolic link …选项选择Yes，否则没有/usr/local/cuda/，只有/usr/local/cuda8.0/
+
 
 4. 配置环境变量
 打开终端，在文件/etc/profile的最后添加以下内容：
@@ -123,6 +140,7 @@ source /etc/profile
 sudo ldconfig
 ```
 打开终端，输入cuda，按2次”Tab键“，如果有弹出的命令提示，就说明环境配置成功。  
+
 
 5. 安装CUDA SAMPLES
 为什么安装cuda samples?
@@ -146,11 +164,14 @@ cd ./bin/x86_64/linux/release
 ![./deviceQuery执行结果](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYwODI5MTAwODM1Njkz?x-oss-process=image/format,png)
 
 [原图博客地址](https://blog.csdn.net/xuezhisdc/article/details/48651003)  
+
+
 6. 验证nvcc  
 重新打开终端，输入命令*nvcc --version*，如果已经安装了，会显示版本号；如果没有安装，按照提示完成安装。
 
 ### 4. 安装cudnn
 1. 在Nvidia官网注册好帐号；
+
 2. 下载cudnn6，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#cudnn%E4%B8%8B%E8%BD%BD)，安装cudnn比较简单，简单地说，就是复制几个文件：库文件和头文件。将cudnn的头文件复制到cuda安装路径的include路径下，将cudnn的库文件复制到cuda安装路径的lib64路径下。
 ；  
 进入CUDNN存放的文件夹，输入：
@@ -167,6 +188,7 @@ sudo cp include/* /usr/local/cuda/include/
 
 P.S. 有一种说法，要建立软连接，但笔者在这一步有报错，参考<https://blog.csdn.net/wanzhen4330/article/details/81704474>，一开始安成了cudnn7，后由cudnn7改为cudnn6,建立软链接的最后一步报错（so.7无法连接？。。。）  
 
+
 3. 测试cudnn是否安装成功
 到目前为止，cudnn已经安装完了。但是，是否安装成功了呢，还得通过下面的cudnn sample测试：
 ```
@@ -181,15 +203,29 @@ make
 
 ### 5. 安装anaconda
 1. 下载anaconda(3.5.0.0)，[下载地址](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#anaconda%E4%B8%8B%E8%BD%BD)；  
+
+
 2. 命令行cd到安装包存放地址，输入：
 ```
 sh Anaconda3-5.0.0-Linux-x86_64.sh
 ```
-安装anaconda，一路输入Y，确认操作就行；  
-
-2. 
+安装anaconda，一路输入Y，确认操作就行； 
 
 
+
+2. 配置环境变量，命令行中输入：
+```
+sudo vi ~/.bashrc
+```
+在底部插入以下这一句：
+```
+export PATH=/home/ubuntu/anaconda3/bin:$PATH
+```
+保存并退出后，输入：
+```
+source ~/.bashrc
+```
+使设置生效。其它详细命令可以查看以下链接：[Anaconda使用总结](http://blog.leanote.com/post/braveapple/Anaconda%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93)
 
 
 
@@ -242,4 +278,4 @@ anaconda3-5.0.0[直接官方下载地址](https://repo.anaconda.com/archive/Anac
 [4][Ubuntu-安装-cuda7.0-单显卡-超详细教程](https://blog.csdn.net/xuezhisdc/article/details/47075401)  
 [5][caffe安装系列——安装cuda和cudnn](https://blog.csdn.net/xuezhisdc/article/details/48651003)  
 [6][Linux上vi(vim)编辑器使用教程](https://www.vpser.net/manage/vi.html)  
-[7][https://blog.csdn.net/hpf247/article/details/79190600](https://blog.csdn.net/hpf247/article/details/79190600)
+[7][Linux系统下如何运行.sh文件](https://blog.csdn.net/hpf247/article/details/79190600)
