@@ -318,13 +318,21 @@ jupyter notebook
 [Ubuntu 卸载nvidia驱动](https://www.cnblogs.com/tangmiao/p/10470663.html)  
 [ubuntu16.04 下 卸载CUDA9.1](https://blog.csdn.net/weixin_40294256/article/details/79173174)  
 [pip版本降级](https://blog.csdn.net/CholenMine/article/details/81121879)  
-[Ubuntu16.04下cuda和cudnn的卸载和升级](https://blog.csdn.net/wanzhen4330/article/details/81704474)
-[关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案](https://www.cnblogs.com/yun6853992/p/9343816.html)
-[ubuntu: Unable to correct problems, you have held broken packages 解决方案](https://blog.csdn.net/u010733679/article/details/52021647/)
-[]()
+[Ubuntu16.04下cuda和cudnn的卸载和升级](https://blog.csdn.net/wanzhen4330/article/details/81704474)  
+[关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案](https://www.cnblogs.com/yun6853992/p/9343816.html)  
+[ubuntu: Unable to correct problems, you have held broken packages 解决方案](https://blog.csdn.net/u010733679/article/details/52021647/)  
+[解决 ImportError: cannot import name 'tf_utils'](https://blog.csdn.net/roxxo/article/details/102551506)  
+
 []()
 
+### 8. 安装pycharm
+若选用pycharm作为IDE，则可参考此帖[Ubuntu安装Pycharm](https://blog.csdn.net/tanghong1996/article/details/81701769)，此处以2016社区版为例。
+```
+sudo add-apt-repository ppa:mystic-mirage/pycharm # 通过命令添加PPA存储库
 
+sudo apt-get update # 社区版安装
+sudo apt-get install pycharm-community
+```
 
   
     
