@@ -289,10 +289,14 @@ pip list
 <6>. 打开Jupyter进行测试：
 打开终端，输入：
 ```
-jupyter
+jupyter notebook
 ```
+进入jupyter后，进行测试，看是否是利用GPU计算深度学习的例程。这里附一案例链接：[Regressor 回归](https://morvanzhou.github.io/tutorials/machine-learning/keras/2-1-regressor/)[代码链接](https://github.com/MorvanZhou/tutorials/blob/master/kerasTUT/4-regressor_example.py)
 
-
+### 7. 卸载以上部分数据包
+若因安装版本不匹配，需要卸载，可参考以下链接：
+[]()
+[]()
 
 
 
