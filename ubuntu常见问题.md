@@ -7,8 +7,12 @@ Ubuntu 13.10 或以上
 sudo apt-get install exfat-fuse
 ```
 
+2. 查看cpu信息，见文献[2]；  
 
-
+  
+3. 查看硬件配置，见文献[3]；
+  
+4. Mendeley导入中文乱码问题，见[ubuntu中mendeley无法使用中文解决方案](https://blog.csdn.net/weixin_40100431/article/details/82633423)
 
 # 参考文献
 [1][ubuntu挂载移动硬盘出现错误 mount:unknown filesystem type exfat](https://www.jb51.net/os/Ubuntu/560860.html)  
