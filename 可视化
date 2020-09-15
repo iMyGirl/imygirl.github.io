@@ -1,0 +1,12 @@
+## Altair 可视化  
+使用范例：  
+<1>.  [Exploratory Data Visualisation with Altair](https://medium.com/analytics-vidhya/exploratory-data-visualisation-with-altair-b8d85494795c)  
+(需科学上网)
+<2>.  [Altair的使用学习](https://blog.csdn.net/eerywh/article/details/100098182)  
+遇到的问题：  
+不出图表或报错（JavaScrip相关?）  ——> 参考[解决Altair 在juypter notebook 中安装后，图表不显示问题](https://blog.csdn.net/weixin_33836874/article/details/92120711)
+```
+pip install --upgrade notebook
+```  
+notebook 5.0.0 --> 6.1.4  
+出现图表
