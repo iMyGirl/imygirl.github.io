@@ -362,7 +362,7 @@ tf.test.is_gpu_available()
   
   
 ### 9. 安装pycharm 或 vscode
-若选用pycharm作为IDE，则可参考此帖[Ubuntu安装Pycharm](https://blog.csdn.net/tanghong1996/article/details/81701769)，此处以2016社区版为例。
+<1>.  若选用pycharm作为IDE，则可参考此帖[Ubuntu安装Pycharm](https://blog.csdn.net/tanghong1996/article/details/81701769)，此处以2016社区版为例。
 ```
 sudo add-apt-repository ppa:mystic-mirage/pycharm # 通过命令添加PPA存储库
 
@@ -373,7 +373,9 @@ sudo apt-get install pycharm-community
 
 [Pycharm用鼠标滚轮控制字体大小 - 墨颜丶 - 博客园](https://www.cnblogs.com/moyand/p/9060890.html)  
 [Linux(ubuntu)下Pycharm配置python运行环境（编译器中导入虚拟环境）](https://blog.csdn.net/StupidAutofan/article/details/79199127)  
-[ubuntu下pycharm安装与使用](https://blog.csdn.net/m0_37673146/article/details/83541882)
+[ubuntu下pycharm安装与使用](https://blog.csdn.net/m0_37673146/article/details/83541882)  
+  
+<2>.  若选用vscode，可参考[【Ubuntu】Ubuntu 16.04 安装VSCode](https://blog.csdn.net/shuiyixin/article/details/98970992)
 
 
   
