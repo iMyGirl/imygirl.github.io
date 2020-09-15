@@ -314,8 +314,33 @@ jupyter notebook
 ---------------------------------------------------------------------
   
     
-    
-### 7. 卸载以上部分数据包
+### 7. 测试是否为GPU计算  
+方法一：打开Jupyter Notebook ，新建python文件，执行以下代码：  
+
+```
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
+```  
+方法二：打开Jupyter Notebook ，新建python文件，执行以下代码：  
+```
+import tensorflow as tf
+with tf.device('/gpu:0'):
+    a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3], name='a')
+    b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[3, 2], name='b')
+    c = tf.matmul(a, b)
+
+with tf.Session() as sess:
+    print (sess.run(c))
+```  
+方法三：打开Jupyter Notebook ，新建python文件，执行以下代码：  
+```
+import tensorflow as tf
+tf.test.is_gpu_available()
+```  
+(以上摘自CSDN社区)  
+
+  
+### 8. 卸载以上部分数据包
 若因安装版本不匹配，如运行程序出现此帖中的报错[CUDA driver version is insufficient for CUDA runtime version 解决](https://www.cnblogs.com/wolflzc/p/9117291.html)，需要卸载数据包，更换另一版本，或有其他问题，可参考以下链接：  
 
 
@@ -336,7 +361,7 @@ jupyter notebook
 ---------------------------------------------------------------------  
   
   
-### 8. 安装pycharm
+### 9. 安装pycharm 或 vscode
 若选用pycharm作为IDE，则可参考此帖[Ubuntu安装Pycharm](https://blog.csdn.net/tanghong1996/article/details/81701769)，此处以2016社区版为例。
 ```
 sudo add-apt-repository ppa:mystic-mirage/pycharm # 通过命令添加PPA存储库
