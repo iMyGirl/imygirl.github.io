@@ -1,4 +1,4 @@
-# 查看GPU状态
+## 查看GPU状态
 ##
 ```
 nvidia-smi
@@ -31,12 +31,18 @@ ps -f -p xxxxx #xxxxx代表进程号
 
 ![查看GPU状态截图](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%9F%A5%E7%9C%8BGPU%E7%8A%B6%E6%80%81/Screenshot%20from%202020-06-21%2014-01-51_crop.png)
 
-# 指定显卡计算
+## 指定显卡计算
 ```
 import tensorflow as tf
 tf.device('/gpu:1')
 ```
-参见[在多GPU情况下TensorFlow如何指定在哪些GPU上运行程序](https://www.cnblogs.com/piaojianxue/p/10843245.html)
+参见[在多GPU情况下TensorFlow如何指定在哪些GPU上运行程序](https://www.cnblogs.com/piaojianxue/p/10843245.html)  
+  
+    
+## 显卡计算报错    
+  
+报错“Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED”  
+[yolov3检测报错Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED](https://blog.csdn.net/weixin_44754046/article/details/97663626)
 
 
 # 参考资料：
