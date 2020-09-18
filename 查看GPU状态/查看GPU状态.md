@@ -42,7 +42,7 @@ tf.device('/gpu:1')
 ## 显卡计算报错    
   
 报错“Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED”  
-[yolov3检测报错Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED](https://blog.csdn.net/weixin_44754046/article/details/97663626)
+参见[yolov3检测报错Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED](https://blog.csdn.net/weixin_44754046/article/details/97663626)
 
 
 # 参考资料：
