@@ -12,9 +12,11 @@ sudo apt-get install exfat-fuse
   
 3. 查看硬件配置，见文献[3]；
   
-4. Mendeley导入中文乱码问题，见[ubuntu中mendeley无法使用中文解决方案](https://blog.csdn.net/weixin_40100431/article/details/82633423)  
+4. Mendeley导入中文乱码问题，见[ubuntu中mendeley无法使用中文解决方案](https://blog.csdn.net/weixin_40100431/article/details/82633423)；  
   
-5. ubuntu更新国内镜像源，参考文献[4]-[6]  
+5. ubuntu更新国内镜像源，参考文献[4]-[6]；  
+  
+6. 查看硬盘空间，见[ubuntu如何查看磁盘空间](https://jingyan.baidu.com/article/39810a23bafcdab637fda64a.html)  
 
 # 参考文献
 [1][ubuntu挂载移动硬盘出现错误 mount:unknown filesystem type exfat](https://www.jb51.net/os/Ubuntu/560860.html)  
