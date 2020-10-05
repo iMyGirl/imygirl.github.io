@@ -12,11 +12,11 @@ sudo apt-get install exfat-fuse
   
 3. 查看硬件配置，见文献[3]；
   
-4. Mendeley导入中文乱码问题，见[ubuntu中mendeley无法使用中文解决方案](https://blog.csdn.net/weixin_40100431/article/details/82633423)；  
+4. Mendeley导入中文乱码问题，见文献[12]；  
   
 5. ubuntu更新国内镜像源，参考文献[4]-[6]。apt-get卸载软件包参见文献[11]；  
   
-6. 查看硬盘空间，见[ubuntu如何查看磁盘空间](https://jingyan.baidu.com/article/39810a23bafcdab637fda64a.html)  
+6. 查看硬盘空间，见文献[13];  
 
 7. 安装vlc播放器：
 >有报错“gnupg : Breaks: software-properties-common (<= 0.96.24.3) but 0.96.20.10 is to be installed”，依照文献[7][8]处理后，按文献[9]安装即可，或采用文献[10]的安装方式。
@@ -32,5 +32,7 @@ sudo apt-get install exfat-fuse
 [8][Ubuntu16.10安装python3-tk](https://blog.csdn.net/zengNLP/article/details/79643662)    
 [9][vlc在Ubuntu下的自动安装和手动安装](https://blog.csdn.net/fireroll/article/details/5867156)  
 [10][vlc在ubuntu下安装](http://blog.sina.com.cn/s/blog_62949ff40101edmv.html)  
-[11][Ubuntu apt-get彻底卸载软件包](https://blog.csdn.net/get_set/article/details/51276609)
+[11][Ubuntu apt-get彻底卸载软件包](https://blog.csdn.net/get_set/article/details/51276609)  
+[12][ubuntu中mendeley无法使用中文解决方案](https://blog.csdn.net/weixin_40100431/article/details/82633423)  
+[13][ubuntu如何查看磁盘空间](https://jingyan.baidu.com/article/39810a23bafcdab637fda64a.html)
 
