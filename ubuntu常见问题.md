@@ -1,4 +1,4 @@
-1. 挂载移动硬盘出错：
+1. 挂载移动硬盘出错，见文献[1]：
 ubuntu挂载移动硬盘出现错误：mount:unknown filesystem type 'exfat'  
 处理方法如下：
 Ubuntu 13.10 或以上
