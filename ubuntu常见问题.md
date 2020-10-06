@@ -19,12 +19,14 @@ sudo apt-get install exfat-fuse
 5. ubuntu更新国内镜像源，参考文献[4]-[6]。apt-get卸载软件包参见文献[11]；  
   
 ## 软件安装  
-6. Mendeley导入中文乱码问题，见文献[12]；
+1. Mendeley导入中文乱码问题:
+>见文献[12]；
 
-7. 安装vlc播放器：
+2. 安装vlc播放器：
 >有报错“gnupg : Breaks: software-properties-common (<= 0.96.24.3) but 0.96.20.10 is to be installed”，依照文献[7][8]处理后，按文献[9]安装即可，或采用文献[10]的安装方式。
   
-3. 安装福昕阅读器（Foxit Reader），参见文献[14]；  
+3. 安装福昕阅读器（Foxit Reader）:
+>参见文献[14]；  
     
     
     
