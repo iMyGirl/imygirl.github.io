@@ -7,7 +7,7 @@
 ## 下载地址
 [地址](http://yann.lecun.com/exdb/mnist/)
   
-默认下载地址（），详见文献[4]
+默认下载地址（C:\Users\用户名.keras\datasets\path），详见文献[4]
     
 ## 查看train.num_examples的维度
 ```
