@@ -37,7 +37,24 @@ import tensorflow as tf
 tf.device('/gpu:1')
 ```
 参见[在多GPU情况下TensorFlow如何指定在哪些GPU上运行程序](https://www.cnblogs.com/piaojianxue/p/10843245.html)  
-  
+    
+## 指定显存   
+>Keras
+```
+import tensorflow as tf
+from keras.backend.tensorflow_backend import set_session
+config = tf.ConfigProto()
+config.gpu_options.allocator_type = 'BFC' #A "Best-fit with coalescing" algorithm, simplified from a version of dlmalloc.
+config.gpu_options.per_process_gpu_memory_fraction = 0.3
+config.gpu_options.allow_growth = True
+set_session(tf.Session(config=config)) 
+```
+        
+>Tensorflow  
+```
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)  
+sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))  
+```
     
 ## 显卡计算报错    
   
