@@ -37,6 +37,7 @@ import tensorflow as tf
 tf.device('/gpu:1')
 ```
 参见[在多GPU情况下TensorFlow如何指定在哪些GPU上运行程序](https://www.cnblogs.com/piaojianxue/p/10843245.html)  
+&[InternalError: Blas GEMM launch failed : a.shape=(100, 784), b.shape=(784, 10), m=100, n=10...问题解决办法](https://blog.csdn.net/Vinsuan1993/article/details/81142855)
     
 ## 指定显存   
 >Keras
