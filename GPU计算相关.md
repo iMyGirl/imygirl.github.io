@@ -54,7 +54,9 @@ set_session(tf.Session(config=config))
 ```
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)  
 sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))  
-```
+```  
+  
+参见[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)  
     
 ## 显卡计算报错    
   
