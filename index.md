@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+## 欢迎来我的博客，有事儿没事儿，常来坐坐！  
+## Welcome to My GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/iMyGirl/imygirl.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
