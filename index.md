@@ -1,5 +1,22 @@
 ## 欢迎来我的博客，有事儿没事儿，常来坐坐！  
 ## Welcome to My GitHub Pages
+以下整理了机器学习相关的技术博客：
+
+[Linux深度学习环境配置](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/iMyGirl/imygirl.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
