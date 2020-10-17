@@ -1,5 +1,9 @@
-## 欢迎来我的博客，有事儿没事儿，常来坐坐！  
+## 欢迎来我的博客，有事儿没事儿，常来坐坐！   
+
 ## Welcome to My GitHub Pages
+本主页会记录本人参与的机器学习和计算机相关的调试、开发等内容，欢迎各位同学一起学习交流！  
+E-mail： zidutian@gmail.com  
+##### 机器学习（Machine Learning）
 以下整理了机器学习相关的技术博客：
 
 [Linux深度学习环境配置](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)  
