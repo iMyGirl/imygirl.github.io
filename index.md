@@ -7,6 +7,24 @@ E-mail： zidutian@gmail.com
 以下整理了机器学习相关的技术博客：
 
 [Linux深度学习环境配置](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)  
+  
+[数据包_数据科学_使用问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%95%B0%E6%8D%AE%E5%8C%85_%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6_%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98.md)  
+  
+[保存运行结果_Python](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E4%BF%9D%E5%AD%98%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C_Python.md)  
+    
+[可视化](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E5%8F%AF%E8%A7%86%E5%8C%96.md)    
+  
+[GPU计算相关](https://github.com/iMyGirl/imygirl.github.io/blob/master/GPU%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3.md)  
+  
+[ubuntu常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/ubuntu%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
+    
+[windows常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/windows%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
+      
+[]()  
+        
+[]()
+      
+      
 
 
 
@@ -21,39 +39,3 @@ E-mail： zidutian@gmail.com
 
 
 
-
-You can use the [editor on GitHub](https://github.com/iMyGirl/imygirl.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iMyGirl/imygirl.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
