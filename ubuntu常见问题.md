@@ -27,6 +27,10 @@ sudo apt-get install exfat-fuse
   
 3. 安装福昕阅读器（Foxit Reader）:
 >参见文献[14]；  
+  
+4. 安装Typora ：  
+>参见文献[15];  
+
     
     
     
@@ -46,5 +50,5 @@ sudo apt-get install exfat-fuse
 [12][ubuntu中mendeley无法使用中文解决方案](https://blog.csdn.net/weixin_40100431/article/details/82633423)  
 [13][ubuntu如何查看磁盘空间](https://jingyan.baidu.com/article/39810a23bafcdab637fda64a.html)  
 [14][ubuntu 安装FoxitReader福昕阅读器](https://blog.csdn.net/github_38704428/article/details/79091407)  
-
+[15][在Linux上安装Typora](https://www.typora.net/364.html)
 
