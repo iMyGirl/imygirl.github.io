@@ -34,6 +34,7 @@ sudo apt-get install exfat-fuse
   使用Typora：  
   >一般使用参见文献[16][17];  
 >学术论文写作参见文献[19];  
+>云同步使用参见文献[20]
     
     
 
@@ -61,4 +62,4 @@ sudo apt-get install exfat-fuse
 [17][Typora 完全使用详解](https://sspai.com/post/54912)  
 [18][Typora — a markdown editor, markdown reader.](https://typora.io/)  
 [19][使用Markdown写论文| 伊织夏](https://www.ai1994.com/2019/01/06/markdownpaper/)
-
+[20][Typora+坚果云：支持markdown的云笔记搭建](https://zhuanlan.zhihu.com/p/36556550)
