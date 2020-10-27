@@ -4,7 +4,7 @@
 
 
 本主页会记录个人参与的机器学习和计算机相关的调试、开发等内容，欢迎各位同学一起学习交流！  
-E-mail： zidutian@gmail.com  
+E-mail： <zidutian@gmail.com>  
 ### 机器学习（Machine Learning）
 以下整理了机器学习相关的技术博客：
 
