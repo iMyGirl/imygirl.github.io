@@ -20,7 +20,10 @@ sys.stdout = Logger('a.log', sys.stdout)
 sys.stderr = Logger('a.log_file', sys.stderr)
 ```
   
-## 方式二，采用Python的日志记录---logging
+## 方式二，采用Python的日志记录---logging，参见文献【2】。
+```
+
+```
 
     
 # 参考文献
