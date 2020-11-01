@@ -12,7 +12,7 @@ E-mail： <zidutian@gmail.com>
   
 [数据包_数据科学_使用问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%95%B0%E6%8D%AE%E5%8C%85_%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6_%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98.md)  
   
-[保存运行结果_Python](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E4%BF%9D%E5%AD%98%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C_Python.md)  
+[常用操作_Python](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E4%BF%9D%E5%AD%98%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C_Python.md)  
     
 [可视化](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E5%8F%AF%E8%A7%86%E5%8C%96.md)    
   
