@@ -1,3 +1,5 @@
+[TOC]  
+
 # Linux深度学习环境配置（ubuntu16.04+nvidia430+cuda8.0.44+cudnn6+anaconda3-5.0.0+tensorflow1.4.0+keras2.1.5）
 
 
