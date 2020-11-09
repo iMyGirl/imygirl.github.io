@@ -38,7 +38,14 @@ print(boxes)
 np.savetxt('./input_output/boxes.txt',boxes,fmt='%s',newline='\n')
 print('---------------------boxes--------------------------')
 ```
+  
+# 对excel进行操作  
+读取等基本操作可详见  
+>[python 读取 Excel](https://www.cnblogs.com/crazymagic/articles/9752287.html)  
+[Python自动化办公- 从 Excel 创建、数据操作到存储！](https://mp.weixin.qq.com/s?__biz=MzU2NTgxMjUyMQ==&mid=2247486280&idx=1&sn=6d7393d5aeacb9cfe9d97f0f7fe503d4&chksm=fcb7470ecbc0ce18a0799644f8fddcf50f43c462f6af9295f8892435a4044a0cea37aa2b92c3&scene=178&cur_album_id=1553267593606709249#rd)  
+[Python 自动化办公 — 处理 Excel 文件！](https://mp.weixin.qq.com/s?__biz=MzU2NTgxMjUyMQ==&mid=2247486022&idx=1&sn=00caba0bd1e583dfaf430743d3c37304&chksm=fcb74600cbc0cf16b32473e9c68bb7d537c67c7aaf409f6e18070fb4b7bcfe42fed9247bb92a&scene=178&cur_album_id=1553267593606709249#rd)  
 
+读取某cell的值
     
 # 参考文献
 [1][将Python3控制台输出保存到文件的方法](https://blog.csdn.net/qysh123/article/details/98477249)。
