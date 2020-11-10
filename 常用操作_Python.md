@@ -47,6 +47,13 @@ print('---------------------boxes--------------------------')
 以上操作对某些文件并不适用，在读取cell（单元格）值时可能出现只读取了cell的名称，而未读取到cell的值。  
 
 2. 利用pandas读取某cell的值等，详见[python对excel操作获取某一列，某一行的值，对某一列信息筛选](https://blog.csdn.net/weixin_43245453/article/details/90747259)
+2.1 pandas将dict转csv:
+```
+import pandas as pd
+data_new = pd.DataFrame(data)
+data_new.to_csv('data_new.csv')
+```  
+可参考[怎么将dict保存成csv python](https://jingyan.baidu.com/article/fc07f989cd89b552fee51967.html)[pandas 把字典转换成DataFrame](https://blog.csdn.net/u013061183/article/details/79497254)[python3将dict转为dataframe](https://blog.csdn.net/kkkkkiko/article/details/80957845?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
     
 # 参考文献
 [1][将Python3控制台输出保存到文件的方法](https://blog.csdn.net/qysh123/article/details/98477249)。
