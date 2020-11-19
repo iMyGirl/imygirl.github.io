@@ -27,7 +27,7 @@ E-mail： <zidutian@gmail.com>
 [飞行与健康管理相关数据集](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%95%B0%E6%8D%AE%E9%9B%86_Dataset/%E9%A3%9E%E8%A1%8C%E4%B8%8E%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E9%9B%86.md)
       
       
-##### 空管数据集  
+##### 空中交通管制数据集  
 [The OpenSky Network - Free ADS-B and Mode S data for Research](https://opensky-network.org/)
 
 
