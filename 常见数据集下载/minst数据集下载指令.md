@@ -1,4 +1,4 @@
-# mnist数据集下载
+# mnist数据集下载指令 
 
 ```
 import tensorflow.examples.tutorials.mnist.input_data
