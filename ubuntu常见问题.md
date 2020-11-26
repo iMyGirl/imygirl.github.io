@@ -18,6 +18,11 @@ sudo apt-get install exfat-fuse
   
 5. ubuntu更新国内镜像源，参考文献[4]-[6]。apt-get卸载软件包参见文献[11]；  
   
+6. 显示当前终端的路径：
+```
+~$ pwd
+```
+  
 ## 软件安装  
 1. Mendeley导入中文乱码问题:
 >见文献[12]；
