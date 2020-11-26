@@ -25,18 +25,13 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True) # 执行完以后
 可应用以下函数：
 ```
 path = './mnist.npz'
-def load_data(path)
-  #path = ''
-
-  f = np.load(path)
-
-  x_train, y_train = f['x_train'], f['y_train']
-
-  x_test, y_test = f['x_test'], f['y_test']
-
-  f.close
-
-  return (x_train, y_train), (x_test, y_test)
+def load_data(path):
+    f = np.load(path)
+    x_train, y_train = f['x_train'], f['y_train']
+    x_test, y_test = f['x_test'], f['y_test']
+    f.close
+    return (x_train, y_train), (x_test, y_test)
+(X_train, _), (_, _) = load_data(path)
 ```
 
 
