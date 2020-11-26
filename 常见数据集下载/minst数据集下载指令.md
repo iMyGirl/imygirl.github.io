@@ -7,7 +7,12 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True) # 执行完以后
 
 `input_data.read_data_sets` 报错连接问题
 参见[TensorFlow学习——MNIST read_data_sets一直报连接超时](https://blog.csdn.net/c20081052/article/details/79101499)
+### 查看train.num_examples的维度
+```
+>>>print("Training data size:", mnist.train.num_examples)
+Training data size: 55000
 
+```
 ## Keras下载
 ### 下载地址
 [地址](http://yann.lecun.com/exdb/mnist/)
@@ -39,12 +44,7 @@ def load_data(path='mnist.npz'):
 
 
 
-## 查看train.num_examples的维度
-```
->>>print("Training data size:", mnist.train.num_examples)
-Training data size: 55000
 
-```
 
 
 # 参考文献
