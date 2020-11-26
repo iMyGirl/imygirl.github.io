@@ -15,8 +15,12 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True) # 执行完以后
 默认下载地址（C:\Users\用户名.keras\datasets\path），详见文献[4]
 
 ### 常见问题
-1. 手动下载好数据集后的路径设置问题
-[使用keras下载mnist数据集的问题](https://blog.csdn.net/weixin_43204128/article/details/88976926)
+1. 手动下载好数据集后的路径设置问题  
+```
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+```
+[使用keras下载mnist数据集的问题](https://blog.csdn.net/weixin_43204128/article/details/88976926)  
+
 [Keras中的mnist数据集的加载问题](https://blog.csdn.net/qq_25005311/article/details/97255959)
 
 
