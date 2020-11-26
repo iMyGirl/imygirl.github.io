@@ -22,16 +22,17 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True) # 执行完以后
 [使用keras下载mnist数据集的问题](https://blog.csdn.net/weixin_43204128/article/details/88976926)  
 
 [Keras中的mnist数据集的加载问题](https://blog.csdn.net/qq_25005311/article/details/97255959)  
-可应用以下函数：
+修改mnist.py代码 '~/Python36/lib/site-packages/keras/datasets/mnist.py'：
 ```
-path = './mnist.npz'
-def load_data(path):
+
+def load_data(path='mnist.npz'):
+    path = '~########/mnist.npz'
     f = np.load(path)
     x_train, y_train = f['x_train'], f['y_train']
     x_test, y_test = f['x_test'], f['y_test']
     f.close
     return (x_train, y_train), (x_test, y_test)
-(X_train, _), (_, _) = load_data(path)
+
 ```
 
 
