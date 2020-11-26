@@ -1,5 +1,5 @@
 # mnist数据集下载指令 
-
+## Tensorflow下载
 ```
 import tensorflow.examples.tutorials.mnist.input_data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True) # 执行完以后，会在自己的新建的文件中自动生成一个MNIST_data文件夹，之后将下载的四个压缩文件放到该文件夹下
@@ -8,12 +8,19 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True) # 执行完以后
 `input_data.read_data_sets` 报错连接问题
 参见[TensorFlow学习——MNIST read_data_sets一直报连接超时](https://blog.csdn.net/c20081052/article/details/79101499)
 
-
-## 下载地址
+## Keras下载
+### 下载地址
 [地址](http://yann.lecun.com/exdb/mnist/)
   
 默认下载地址（C:\Users\用户名.keras\datasets\path），详见文献[4]
-    
+
+### 常见问题
+1. 手动下载好数据集后的路径设置问题
+[使用keras下载mnist数据集的问题](https://blog.csdn.net/weixin_43204128/article/details/88976926)
+[Keras中的mnist数据集的加载问题](https://blog.csdn.net/qq_25005311/article/details/97255959)
+
+
+
 ## 查看train.num_examples的维度
 ```
 >>>print("Training data size:", mnist.train.num_examples)
