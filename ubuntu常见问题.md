@@ -41,7 +41,10 @@ sudo apt-get install exfat-fuse
 >学术论文写作参见文献[19];  
 >云同步使用参见文献[20];
     
-    
+      
+5. 安装输入法
+>参见[Linux安装中文输入法（Google拼音输入法）](https://blog.csdn.net/u012308586/article/details/102751329)
+>参考[Linux安装搜狗拼音和谷歌拼音输入法](https://www.jianshu.com/p/429b8f75af2c)  &  [ubuntu利用 im-config安装中文输入法](https://blog.csdn.net/zilaike/article/details/78227938)
 
     
     
