@@ -25,7 +25,16 @@ df -ha # 查看所有文件系统的磁盘空间
 6. 显示当前终端的路径：
 ```
 ~$ pwd
+```  
+7. 网络配置  
 ```
+  '/etc/network/interfaces' 
+```    
+  参考：  
+
+[linux中nmcli命令的使用及网络配置](https://blog.51cto.com/groot/1847482)
+[Linux网络配置](https://tonydeng.github.io/sdn-handbook/linux/config.html)
+[NetworkManager设置](https://zhuanlan.zhihu.com/p/52731316)
   
 ## 软件安装  
 1. Mendeley导入中文乱码问题:
