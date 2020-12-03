@@ -18,8 +18,8 @@ sudo apt-get install exfat-fuse
 ```
 df
 df -h # 以mb或者gb的形式显示磁盘容量
-df -ha # 查看所有文件系统的磁盘空间
-  
+df -ha # 查看所有文件系统的磁盘空间  
+```
 5. ubuntu更新国内镜像源，参考文献[4]-[6]。apt-get卸载软件包参见文献[11]；  
   
 6. 显示当前终端的路径：
