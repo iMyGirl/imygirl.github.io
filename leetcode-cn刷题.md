@@ -103,13 +103,7 @@ class Solution:
     -109 <= target <= 109
     只会存在一个有效答案
 
-相关标签
-数组哈希表
-1
-2
-测试用例执行结果提交结果
-[2,7,11,15]
-9
+
 ```
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
