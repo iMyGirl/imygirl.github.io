@@ -15,10 +15,14 @@ tf.Tensor(
  [ 0.35707003 -1.0048716   0.32933357 ...  1.1587293  -0.02009248
   -0.30354366]], shape=(1100, 400), dtype=float32) 
 ```  
-BUFFER_SIZE = 60000
-BATCH_SIZE = 10
-inputLength = 400
+BUFFER_SIZE = 60000  
+
+BATCH_SIZE = 10  
+  
+inputLength = 400  
+
 train_dataset = tf.data.Dataset.from_tensor_slices(trainECG).shuffle(BUFFER_SIZE).batch(BATCH_SIZE)  
+
 train_dataset
 ```
 <BatchDataset shapes: (None, 400, 1), types: tf.float32>
