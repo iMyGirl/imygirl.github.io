@@ -30,7 +30,8 @@ tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=
 + seed: 随机数种子，是一个整数，当设置之后，每次生成的随机数都一样
 + name: 操作的名称
 
-* * *  
+* * *    
+```
 BUFFER_SIZE = 60000  
 
 BATCH_SIZE = 10  
@@ -41,5 +42,7 @@ train_dataset = tf.data.Dataset.from_tensor_slices(trainECG).shuffle(BUFFER_SIZE
 
 train_dataset
 ```
+```
 <BatchDataset shapes: (None, 400, 1), types: tf.float32>
 ```
+参见 >[tensorflow学习笔记：tf.data.Dataset，from_tensor_slices(),shuffle()，batch()的用法](https://blog.csdn.net/qq_18888869/article/details/94575180)
