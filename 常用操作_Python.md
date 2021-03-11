@@ -54,7 +54,10 @@ data_new = pd.DataFrame(data)
 data_new.to_csv('data_new.csv')
 ```  
 可参考[怎么将dict保存成csv python](https://jingyan.baidu.com/article/fc07f989cd89b552fee51967.html)[pandas 把字典转换成DataFrame](https://blog.csdn.net/u013061183/article/details/79497254)[python3将dict转为dataframe](https://blog.csdn.net/kkkkkiko/article/details/80957845?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
-    
+  
+# 路径读取  
+## 使用glob数据包操作  
+>参见[glob.glob() 函数](https://blog.csdn.net/GeorgeAI/article/details/81035422)
 # 参考文献
 [1][将Python3控制台输出保存到文件的方法](https://blog.csdn.net/qysh123/article/details/98477249)。
 [2][logging --- Python 的日志记录工具— Python 3.9.0 文档](https://docs.python.org/zh-cn/3/library/logging.html)
