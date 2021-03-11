@@ -13,7 +13,7 @@ E-mail： <zidutian@gmail.com>
   
 [常用操作_Python](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C_Python.md)  
     
-[可视化](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E5%8F%AF%E8%A7%86%E5%8C%96.md)    
+[可视化&数据处理](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E5%8F%AF%E8%A7%86%E5%8C%96%26%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86.md)    
   
 [GPU计算相关](https://github.com/iMyGirl/imygirl.github.io/blob/master/GPU%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3.md)  
   
