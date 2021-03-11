@@ -9,9 +9,9 @@ E-mail： <zidutian@gmail.com>
 
 [Linux深度学习环境配置](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)  
   
-[数据包_数据科学_使用问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%95%B0%E6%8D%AE%E5%8C%85_%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6_%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98.md)  
+[数据包管理常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%95%B0%E6%8D%AE%E5%8C%85%E7%AE%A1%E7%90%86%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
   
-[常用操作_Python](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C_Python.md)  
+[Python常用操作](https://github.com/iMyGirl/imygirl.github.io/blob/master/Python%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)  
     
 [可视化&数据处理](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E5%8F%AF%E8%A7%86%E5%8C%96%26%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86.md)    
   
