@@ -29,7 +29,26 @@ tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=
 + dtype: 输出的类型，默认为tf.float32
 + seed: 随机数种子，是一个整数，当设置之后，每次生成的随机数都一样
 + name: 操作的名称
-
+  
+### tf转numpy  
+```
+import numpy as np
+ndarray = np.ones([2,2])
+tensor = tf.multiply(ndarray, 36)
+print(tensor)
+# 用np.add对tensorflow进行加运算
+print(np.add(tensor, 1))
+# 转换为numpy类型
+print(tensor.numpy())
+tf.Tensor(
+[[36. 36.]
+ [36. 36.]], shape=(2, 2), dtype=float64)
+[[37. 37.]
+ [37. 37.]]
+[[36. 36.]
+ [36. 36.]]
+```  
+参见[TensorFlow2.0教程-张量极其操作](https://zhuanlan.zhihu.com/p/65609769)
 * * *    
 ```
 BUFFER_SIZE = 60000  
