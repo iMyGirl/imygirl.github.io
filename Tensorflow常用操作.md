@@ -1,4 +1,5 @@
-  
+## 生成Tensor
+### 随机生成
 ```  
 tf.random.normal([1100,400])   
 ```
@@ -29,6 +30,12 @@ tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=
 + dtype: 输出的类型，默认为tf.float32
 + seed: 随机数种子，是一个整数，当设置之后，每次生成的随机数都一样
 + name: 操作的名称
+    
+ ### Tensor操作  
+ <kbd>tf.mutiply()</kbd>  
+ >[tf.multiply与tf.matmul的区别](https://blog.csdn.net/mumu_1233/article/details/78887068)  
+  <kbd>tf.mutiply()</kbd>   
+>[Tensorflow学习笔记（二）：常量（tf.constant）与变量（tf.Varialbe）](https://blog.csdn.net/yjk13703623757/article/details/77075711)  
   
 ### tf转numpy  
 ```
@@ -47,8 +54,16 @@ tf.Tensor(
  [37. 37.]]
 [[36. 36.]
  [36. 36.]]
-```  
-参见[TensorFlow2.0教程-张量极其操作](https://zhuanlan.zhihu.com/p/65609769)
+```    
+```
+ndarray = np.ones([3, 3])
+
+print("TensorFlow operations convert numpy arrays to Tensors automatically")
+tensor = tf.multiply(ndarray, 42)
+print(tensor)
+```
+参见>[TensorFlow2.0教程-张量极其操作](https://zhuanlan.zhihu.com/p/65609769)  
+[TF2.0张量及其操作、numpy兼容、GPU加速 (tensorflow2.0官方教程翻译）](https://zhuanlan.zhihu.com/p/68433904)
 * * *    
 ```
 BUFFER_SIZE = 60000  
