@@ -30,7 +30,8 @@ ps -f -p xxxxx #xxxxx代表进程号
 - CMD 表示执行命令
 
 ![查看GPU状态截图](https://github.com/iMyGirl/imygirl.github.io/blob/master/%E6%9F%A5%E7%9C%8BGPU%E7%8A%B6%E6%80%81/Screenshot%20from%202020-06-21%2014-01-51_crop.png)
-
+## 测试是否为GPU在计算  
+参见>[测试是否为GPU计算](https://github.com/iMyGirl/imygirl.github.io/blob/master/Linux%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md#7-%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E4%B8%BAgpu%E8%AE%A1%E7%AE%97)
 ## 指定显卡计算
 ```
 import os
