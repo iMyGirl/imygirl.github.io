@@ -64,7 +64,12 @@ AttributeError: module 'tensorflow' has no attribute 'ConfigProto'
 ```
 参见[[机器学习]AttributeError: module 'tensorflow' has no attribute 'ConfigProto' 报错解决方法](https://www.cnblogs.com/zlc364624/p/12572947.html)
   
-参见[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)  
+参见[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)    
+[“Failed to get convolution algorithm. This is probably because cuDNN failed to initialize”错误的解决办法](https://www.w3xue.com/exp/article/20206/89280.html)  
+[`set_session` is not available when using TensorFlow 2.0.](https://blog.csdn.net/zuoyouzouzou/article/details/104329286)
+    
+    
+    [FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
     
 ## 显卡计算报错    
   
