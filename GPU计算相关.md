@@ -90,6 +90,8 @@ RuntimeError: Physical devices cannot be modified after being initialized
 参见[yolov3检测报错Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED](https://blog.csdn.net/weixin_44754046/article/details/97663626)
 
 
+报错“InternalError: Blas GEMM launch failed : a.shape=(15680, 1), b.shape=(1, 7840), m=15680, n=7840, k=1 [Op:MatMul] name: sequential/dense/Tensordot/MatMul/”  
+参见[InternalError: Blas GEMM launch failed : a.shape=(100, 784), b.shape=(784, 10), m=100, n=10...问题解决办法](https://blog.csdn.net/Vinsuan1993/article/details/81142855)
 
 
 
