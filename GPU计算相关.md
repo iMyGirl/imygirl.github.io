@@ -67,16 +67,17 @@ AttributeError: module 'tensorflow' has no attribute 'ConfigProto'
 参见[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)    
 [“Failed to get convolution algorithm. This is probably because cuDNN failed to initialize”错误的解决办法](https://www.w3xue.com/exp/article/20206/89280.html)  
 [`set_session` is not available when using TensorFlow 2.0.](https://blog.csdn.net/zuoyouzouzou/article/details/104329286)
+[FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
     
     
-    [FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
     
+* * *    
 ```
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
 tf.config.experimental.set_memory_growth(physical_devices[0], True)
 ```    
-* * *
+
 ```
 RuntimeError: Physical devices cannot be modified after being initialized
 ```
