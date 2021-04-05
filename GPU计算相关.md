@@ -62,12 +62,12 @@ sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 ```
 AttributeError: module 'tensorflow' has no attribute 'ConfigProto'
 ```
-参见[[机器学习]AttributeError: module 'tensorflow' has no attribute 'ConfigProto' 报错解决方法](https://www.cnblogs.com/zlc364624/p/12572947.html)
+参见>[[机器学习]AttributeError: module 'tensorflow' has no attribute 'ConfigProto' 报错解决方法](https://www.cnblogs.com/zlc364624/p/12572947.html)
   
-参见[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)    
-[“Failed to get convolution algorithm. This is probably because cuDNN failed to initialize”错误的解决办法](https://www.w3xue.com/exp/article/20206/89280.html)  
-[`set_session` is not available when using TensorFlow 2.0.](https://blog.csdn.net/zuoyouzouzou/article/details/104329286)
-[FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
+参见>[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)
+>[“Failed to get convolution algorithm. This is probably because cuDNN failed to initialize”错误的解决办法](https://www.w3xue.com/exp/article/20206/89280.html)  
+>[`set_session` is not available when using TensorFlow 2.0.](https://blog.csdn.net/zuoyouzouzou/article/details/104329286)
+>[FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
     
     
     
@@ -81,17 +81,17 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 ```
 RuntimeError: Physical devices cannot be modified after being initialized
 ```
-[Tensorflow GPU 分配](https://jackfrisht.medium.com/tensorflow-gpu-%E5%88%86%E9%85%8D-553e36cfaca0)
+>[Tensorflow GPU 分配](https://jackfrisht.medium.com/tensorflow-gpu-%E5%88%86%E9%85%8D-553e36cfaca0)
     
     
 ## 显卡计算报错    
   
 报错“Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED”  
-参见[yolov3检测报错Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED](https://blog.csdn.net/weixin_44754046/article/details/97663626)
+参见>[yolov3检测报错Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED](https://blog.csdn.net/weixin_44754046/article/details/97663626)
 
 
 报错“InternalError: Blas GEMM launch failed : a.shape=(15680, 1), b.shape=(1, 7840), m=15680, n=7840, k=1 [Op:MatMul] name: sequential/dense/Tensordot/MatMul/”  
-参见[InternalError: Blas GEMM launch failed : a.shape=(100, 784), b.shape=(784, 10), m=100, n=10...问题解决办法](https://blog.csdn.net/Vinsuan1993/article/details/81142855)
+参见>[InternalError: Blas GEMM launch failed : a.shape=(100, 784), b.shape=(784, 10), m=100, n=10...问题解决办法](https://blog.csdn.net/Vinsuan1993/article/details/81142855)
 
 
 
