@@ -71,10 +71,25 @@ AttributeError: module 'tensorflow' has no attribute 'ConfigProto'
     
     [FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
     
+```
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+tf.config.experimental.set_memory_growth(physical_devices[0], True)
+```    
+* * *
+```
+RuntimeError: Physical devices cannot be modified after being initialized
+```
+[Tensorflow GPU 分配](https://jackfrisht.medium.com/tensorflow-gpu-%E5%88%86%E9%85%8D-553e36cfaca0)
+    
+    
 ## 显卡计算报错    
   
 报错“Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED”  
 参见[yolov3检测报错Could not create cudnn handle: CUDNN_STATUS_ALLOC_FAILED](https://blog.csdn.net/weixin_44754046/article/details/97663626)
+
+
+
 
 
 # 参考资料：
