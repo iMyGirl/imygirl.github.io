@@ -98,7 +98,8 @@ RuntimeError: Physical devices cannot be modified after being initialized
 参见>[Tensorflow 2.0 can't use GPU, something wrong in cuDNN? :Failed to get convolution algorithm. This is probably because cuDNN failed to initialize
 ](https://stackoverflow.com/questions/58143637/tensorflow-2-0-cant-use-gpu-something-wrong-in-cudnn-failed-to-get-convoluti)  
 一般为cudnn等安装问题  
-匹配版本参见><https://www.tensorflow.org/install/source#linux><https://www.tensorflow.org/install/source_windows>
+匹配版本参见><https://www.tensorflow.org/install/source#linux>   
+<https://www.tensorflow.org/install/source_windows>
 
 # 参考资料：
 [1][ubuntu 查看服务器的GPU 谁（用户）在使用](https://blog.csdn.net/BlackLion_zhou/article/details/105566687)  
