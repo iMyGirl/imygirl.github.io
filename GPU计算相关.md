@@ -93,7 +93,11 @@ RuntimeError: Physical devices cannot be modified after being initialized
 报错“InternalError: Blas GEMM launch failed : a.shape=(15680, 1), b.shape=(1, 7840), m=15680, n=7840, k=1 [Op:MatMul] name: sequential/dense/Tensordot/MatMul/”  
 参见>[InternalError: Blas GEMM launch failed : a.shape=(100, 784), b.shape=(784, 10), m=100, n=10...问题解决办法](https://blog.csdn.net/Vinsuan1993/article/details/81142855)
 
-
+>报错"Tensorflow 2.0 can't use GPU, something wrong in cuDNN? :Failed to get convolution algorithm. This is probably because cuDNN failed to initialize"
+参见>[Tensorflow 2.0 can't use GPU, something wrong in cuDNN? :Failed to get convolution algorithm. This is probably because cuDNN failed to initialize
+](https://stackoverflow.com/questions/58143637/tensorflow-2-0-cant-use-gpu-something-wrong-in-cudnn-failed-to-get-convoluti)  
+一般为cudnn等安装问题  
+匹配版本参见><https://www.tensorflow.org/install/source#linux><https://www.tensorflow.org/install/source_windows>
 
 # 参考资料：
 [1][ubuntu 查看服务器的GPU 谁（用户）在使用](https://blog.csdn.net/BlackLion_zhou/article/details/105566687)  
