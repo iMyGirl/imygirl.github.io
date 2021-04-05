@@ -64,10 +64,10 @@ AttributeError: module 'tensorflow' has no attribute 'ConfigProto'
 ```
 参见>[[机器学习]AttributeError: module 'tensorflow' has no attribute 'ConfigProto' 报错解决方法](https://www.cnblogs.com/zlc364624/p/12572947.html)
   
-参见>[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)
->[“Failed to get convolution algorithm. This is probably because cuDNN failed to initialize”错误的解决办法](https://www.w3xue.com/exp/article/20206/89280.html)  
->[`set_session` is not available when using TensorFlow 2.0.](https://blog.csdn.net/zuoyouzouzou/article/details/104329286)
->[FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
+参见>[keras 或 tensorflow 调用GPU报错：Blas GEMM launch failed](https://blog.csdn.net/Leo_Xu06/article/details/82023330)  
+[“Failed to get convolution algorithm. This is probably because cuDNN failed to initialize”错误的解决办法](https://www.w3xue.com/exp/article/20206/89280.html)    
+[`set_session` is not available when using TensorFlow 2.0.](https://blog.csdn.net/zuoyouzouzou/article/details/104329286)  
+[FAILED TO GET CONVOLUTION ALGORITHM. THIS IS PROBABLY BECAUSE CUDNN FAILED TO INITIALIZE](https://www.freesion.com/article/7493897614/)
     
     
     
@@ -94,6 +94,7 @@ RuntimeError: Physical devices cannot be modified after being initialized
 参见>[InternalError: Blas GEMM launch failed : a.shape=(100, 784), b.shape=(784, 10), m=100, n=10...问题解决办法](https://blog.csdn.net/Vinsuan1993/article/details/81142855)
 
 >报错"Tensorflow 2.0 can't use GPU, something wrong in cuDNN? :Failed to get convolution algorithm. This is probably because cuDNN failed to initialize"
+
 参见>[Tensorflow 2.0 can't use GPU, something wrong in cuDNN? :Failed to get convolution algorithm. This is probably because cuDNN failed to initialize
 ](https://stackoverflow.com/questions/58143637/tensorflow-2-0-cant-use-gpu-something-wrong-in-cudnn-failed-to-get-convoluti)  
 一般为cudnn等安装问题  
