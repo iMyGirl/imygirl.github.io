@@ -39,7 +39,8 @@ E-mail： <zidutian@gmail.com>
 
 [UCI machine learning repository](http://archive.ics.uci.edu/ml/index.php)
 
-
+##### 异常检测数据集下载网站
+[Outlier Detection DataSets (ODDS)](http://odds.cs.stonybrook.edu/#table2)
 
 
 
