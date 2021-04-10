@@ -1,3 +1,4 @@
+# leetcode
 ### 1.删除排序数组中的重复项
 给定一个排序数组，你需要在 原地 删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
 
@@ -116,4 +117,23 @@ class Solution:
                     plot[1] = j
         return plot
 
+```
+
+
+# 牛客网_剑指Offer 
+### 
+>暴力遍历
+```
+# -*- coding:utf-8 -*-
+class Solution:
+    # array 二维列表
+    def Find(self, target, array):
+        # write code here
+        array_len = len(array)
+        for i in range(array_len):
+            for j in range(len(array[i])):
+                if array[i][j] == target:
+                    return True
+        return False
+                
 ```
