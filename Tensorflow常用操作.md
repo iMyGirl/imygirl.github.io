@@ -80,3 +80,22 @@ train_dataset
 <BatchDataset shapes: (None, 400, 1), types: tf.float32>
 ```
 参见 >[tensorflow学习笔记：tf.data.Dataset，from_tensor_slices(),shuffle()，batch()的用法](https://blog.csdn.net/qq_18888869/article/details/94575180)
+
+## 保存和恢复模型
+```
+# 创建并训练一个新的模型实例
+model = create_model()
+model.fit(train_images, train_labels, epochs=5)
+
+# 将整个模型保存为 HDF5 文件。
+# '.h5' 扩展名指示应将模型保存到 HDF5。
+model.save('my_model.h5')
+```
+```
+# 重新创建完全相同的模型，包括其权重和优化程序
+new_model = tf.keras.models.load_model('my_model.h5')
+
+# 显示网络结构
+new_model.summary()
+```
+参见[保存和恢复模型](https://www.tensorflow.org/tutorials/keras/save_and_load?hl=zh-cn)
