@@ -401,6 +401,19 @@ data_new.to_csv('data_new.csv')
 ## 路径读取  
 ### 使用glob数据包操作  
 >参见[glob.glob() 函数](https://blog.csdn.net/GeorgeAI/article/details/81035422)
+
+## 时间获取
+```
+取得当前时间戳
+import time
+print time.time()
+格式化时间戳为标准格式
+print time.strftime('%Y.%m.%d',time.localtime(time.time()))
+获取30天前的时间（通过加减秒数来获取现在或者未来某个时间点）
+print time.strftime('%Y.%m.%d',time.localtime(time.time()-2592000))
+```
+参见[Python获取并输出当前日期时间](https://www.cnblogs.com/kerwinC/p/5760811.html)
+
 ## 参考文献
 [1][将Python3控制台输出保存到文件的方法](https://blog.csdn.net/qysh123/article/details/98477249)。
 [2][logging --- Python 的日志记录工具— Python 3.9.0 文档](https://docs.python.org/zh-cn/3/library/logging.html)
