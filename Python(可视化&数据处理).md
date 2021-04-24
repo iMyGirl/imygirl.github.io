@@ -19,7 +19,7 @@
     + [转list](#list)
   * [list](#list)
   * [numpy问题](#numpy问题)
-+ [# Python常用操作](# Python常用操作)
++ [Python常用操作](# Python常用操作)
 
 
 
