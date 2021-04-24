@@ -325,7 +325,18 @@ np.save("data/trans/bike_flow.npy", data)
 import numpy as np
 test=np.load('./bvlc_alexnet.npy',encoding = "latin1")  #加载文件
 ```  
-[python-读取和保存npy文件,numpy库数组属性查看：类型、尺寸、形状、维度](https://blog.csdn.net/qq_37715669/article/details/89675551)
+[python-读取和保存npy文件,numpy库数组属性查看：类型、尺寸、形状、维度](https://blog.csdn.net/qq_37715669/article/details/89675551)  
+>numpy与list互转
+```
+# list 转 numpy
+
+ np.array(a)
+
+# ndarray 转 list
+
+ a.tolist()
+```
+参考[[numpy] ndarray 与 list 互相转换](https://blog.csdn.net/doufuxixi/article/details/80357386)
 * * *
 # Python常用操作
 
