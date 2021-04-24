@@ -27,12 +27,12 @@
 
 # 可视化
 ## Altair 可视化  
-使用范例：  
+>使用范例：  
 <1>.  [Exploratory Data Visualisation with Altair](https://medium.com/analytics-vidhya/exploratory-data-visualisation-with-altair-b8d85494795c)  (该贴需科学上网后浏览)    
 [比 Excel 更强大，Python 的可视化库 Altair 入门](https://mp.weixin.qq.com/s?__biz=MzU2NTgxMjUyMQ==&mid=2247485640&idx=1&sn=5befe74b08424c80074cae77e138548c&chksm=fcb7448ecbc0cd985267a176e145a9a316bf7d5176d96d5f1564f28edb41c9fd7aa00a519416&mpshare=1&scene=1&srcid=0914yNdqUTKpbuZsppRYD0oD&sharer_sharetime=1600088451389&sharer_shareid=8dfc25cc7bc7086ceb44d0173f7e58dc&exportkey=ATkgf6ReMbxYlInLAEwfo58%3D&pass_ticket=Oxo2WkR0zQhYl%2FsoI%2BtOrR83av8yFhENSzsM%2Beb7vAKrcog%2FZx9ugvnNiMqPL0Tx&wx_header=0#rd)
 
 <2>.  [Altair的使用学习](https://blog.csdn.net/eerywh/article/details/100098182)  
-遇到的问题：  
+>遇到的问题：  
 不出图表或报错（JavaScrip相关?）  ——> 参考[解决Altair 在juypter notebook 中安装后，图表不显示问题](https://blog.csdn.net/weixin_33836874/article/details/92120711)
 ```
 pip install --upgrade notebook
