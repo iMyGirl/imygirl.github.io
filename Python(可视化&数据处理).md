@@ -321,7 +321,7 @@ test=np.load('./bvlc_alexnet.npy',encoding = "latin1")  #加载文件
 ```  
 [python-读取和保存npy文件,numpy库数组属性查看：类型、尺寸、形状、维度](https://blog.csdn.net/qq_37715669/article/details/89675551)
 * * *
-
+# Python常用操作
 
 ## python保存运行结果
 
