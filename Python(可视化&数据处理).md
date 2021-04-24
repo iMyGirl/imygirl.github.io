@@ -19,7 +19,7 @@
     + [转list](#list)
   * [list](#list)
   * [numpy问题](#numpy问题)
-    + [numpy删掉值为1的维度](#numpy删掉值为1的维度)
++ [python保存运行结果](#python保存运行结果度)
 
 
 
