@@ -17,16 +17,10 @@ E-mail： <zidutian@gmail.com>
   
 [GPU计算相关](https://github.com/iMyGirl/imygirl.github.io/blob/master/GPU%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3.md)  
   
-[ubuntu常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/ubuntu%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
-    
-[windows常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/windows%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
-      
-[Git操作](https://github.com/iMyGirl/Git-Github)  
-* * *
   
 [Tensorflow & Keras 常用操作](https://github.com/iMyGirl/imygirl.github.io/blob/master/Tensorflow%20&%20Keras%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)
 
-* * *
+
 #### DataSet       
 
 [常见数据集下载](https://github.com/iMyGirl/imygirl.github.io/tree/master/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD)
@@ -41,11 +35,15 @@ E-mail： <zidutian@gmail.com>
 [UCI machine learning repository](http://archive.ics.uci.edu/ml/index.php)
 >##### 异常检测数据集下载网站
 [Outlier Detection DataSets (ODDS)](http://odds.cs.stonybrook.edu/#table2)
+* * *
 
+### 开发相关
 
-
-
-
+[ubuntu常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/ubuntu%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
+    
+[windows常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/windows%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
+      
+[Git操作](https://github.com/iMyGirl/Git-Github)  
 
 
 
