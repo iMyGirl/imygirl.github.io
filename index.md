@@ -38,9 +38,7 @@ E-mail： <zidutian@gmail.com>
 >##### 汽车驾驶数据集
 [The UAH-DriveSet](http://www.robesafe.uah.es/personal/eduardo.romera/uah-driveset/)
 >##### 科研数据集下载网站  
-
 [UCI machine learning repository](http://archive.ics.uci.edu/ml/index.php)
-
 >##### 异常检测数据集下载网站
 [Outlier Detection DataSets (ODDS)](http://odds.cs.stonybrook.edu/#table2)
 
