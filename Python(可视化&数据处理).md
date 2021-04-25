@@ -336,7 +336,21 @@ test=np.load('./bvlc_alexnet.npy',encoding = "latin1")  #加载文件
 
  a.tolist()
 ```
-参考[[numpy] ndarray 与 list 互相转换](https://blog.csdn.net/doufuxixi/article/details/80357386)
+参考[[numpy] ndarray 与 list 互相转换](https://blog.csdn.net/doufuxixi/article/details/80357386)  
+
+>判断两个nparray是否相等
+```
+print((a==b).all())
+```
+参考[numpy中比较两个矩阵是否相同](https://blog.csdn.net/tintinetmilou/article/details/78555486)
+
+
+
+
+
+
+
+
 * * *
 # Python常用操作
 
