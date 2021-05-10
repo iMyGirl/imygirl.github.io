@@ -173,13 +173,20 @@ def plot_pre(path,label_pick,target):
 ```
 + 原因在于plt.savefig()会保存之前的图像，造成图片有重叠  
 
-解决办法：>将plt.show()放在下一行，因plt.show()执行完毕后，会新建一张图纸
+解决办法一：>将plt.show()放在下一行，因plt.show()执行完毕后，会新建一张图纸
 ```
 plt.savefig('/home/tzd/Documents/TZD_py/dataset/SyntheticData/image/linshi/'+str(path_name)+'/'+str(target)+'_'+str(label_pick)+'0t-show-zaihou-200-3rd.png')
 plt.show()
 ```
 参见[【Python】解决使用 plt.savefig 保存图片时一片空白](https://blog.csdn.net/u010099080/article/details/52912439)
     
+解决方法二：>加入plt.close()等函数
+```
+plt.savefig('/home/tzd/Documents/TZD_py/dataset/SyntheticData/image/linshi/'+str(path_name)+'/'+str(target)+'_'+str(label_pick)+'0t-no-show-+close-200-5th.png')
+plt.close()
+```
+参见[使用matplotlib批量绘图并保存的正确做法？](https://www.zhihu.com/question/57128539) & [【matplotlib】 之 清理、清除 axes 和 figure （plt.cla、plt.clf、plt.close）](https://blog.csdn.net/tz_zs/article/details/81393098)
+   
 ### matplotlib坐标轴乱序  
 参考>[plt作图时出现横坐标或者纵坐标乱序的解决方法](https://blog.csdn.net/weixin_43748786/article/details/96432047)    
 
