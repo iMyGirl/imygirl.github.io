@@ -101,7 +101,8 @@ matplotlib 3.0 --> 2.0
 
 
 [ValueError: Format 'jpg' is not supported (supported formats: eps, pdf, pgf, png, ps, raw, rgba, svg](https://blog.csdn.net/liuchengzimozigreat/article/details/82348651)   
-  
+    
+>实验过程中发现，matplot批量可视化和单个可视化不一样（批量的图疑似多个图重叠在一起显示）
     
 ### matplotlib坐标轴乱序  
 参考>[plt作图时出现横坐标或者纵坐标乱序的解决方法](https://blog.csdn.net/weixin_43748786/article/details/96432047)    
