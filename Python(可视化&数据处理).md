@@ -101,10 +101,48 @@ matplotlib 3.0 --> 2.0
 
 
 [ValueError: Format 'jpg' is not supported (supported formats: eps, pdf, pgf, png, ps, raw, rgba, svg](https://blog.csdn.net/liuchengzimozigreat/article/details/82348651)   
-    
+
+### 差错     
 >实验过程中发现，matplot批量可视化和单个可视化不一样（批量的图疑似多个图重叠在一起显示）
 ```
+
 # csv指定样本二维可视化
+def plot_pre(path,label_pick,target):
+    mnist_csv_df = csv_to_pd(path)
+    print(target,label_pick)
+    #print('mnist_csv_df:','\n',mnist_csv_df) 
+    #print('columns:','\n',mnist_csv_df.columns)#获取列的索引名称
+    
+    #df_pick = mnist_label_pick(mnist_csv_df,label_pick)
+
+    df_pick = mnist_csv_df
+    # print(type(df_pick),df_pick)
+
+    colum = df_pick[label_pick]
+    colum = colum.values.tolist()
+    colum = list(flatten(colum))
+    #print('Label:',row[0])
+    #row = row[1:]
+    
+    #print('colum:','\n',colum) 
+    
+    # 索引
+    index = []
+    for i in range(1,1001):
+        index.append(i)
+    #print('index:',index)
+    
+    #print('colum',type(colum),len(colum),'\n',
+    #'index',type(index),len(index))
+    
+    # 展示
+    plt.plot(index,colum,color="r")
+    #plt.show()
+    path_name = 'C11'
+    plt.savefig('/home/tzd/Documents/TZD_py/dataset/SyntheticData/image/linshi/'+str(path_name)+'/'+str(target)+'_'+str(label_pick)+'0t-no-show-200-2nd.png')
+
+
+# main()
     elif swich_select == 0 :
 
         
@@ -131,7 +169,9 @@ matplotlib 3.0 --> 2.0
             #path = '/home/tzd/Documents/TZD_py/dataset/SyntheticData/Training-Data/Flight00'+str(target)+'.csv'
             path = '/home/tzd/Documents/TZD_py/dataset/SyntheticData/Test-Data/Flight00'+str(target)+'.csv'
             plot_pre(path,label_pick,target)
+            
 ```
++ 原因在于plt.savefig()会保存之前的图像，造成图片有重叠
     
 ### matplotlib坐标轴乱序  
 参考>[plt作图时出现横坐标或者纵坐标乱序的解决方法](https://blog.csdn.net/weixin_43748786/article/details/96432047)    
