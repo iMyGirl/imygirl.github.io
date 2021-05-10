@@ -103,6 +103,35 @@ matplotlib 3.0 --> 2.0
 [ValueError: Format 'jpg' is not supported (supported formats: eps, pdf, pgf, png, ps, raw, rgba, svg](https://blog.csdn.net/liuchengzimozigreat/article/details/82348651)   
     
 >实验过程中发现，matplot批量可视化和单个可视化不一样（批量的图疑似多个图重叠在一起显示）
+```
+# csv指定样本二维可视化
+    elif swich_select == 0 :
+
+        
+        csv_choosing_5 = ['001','002','003','004','005']
+        csv_choosing_4 = ['201','202','203','204','205']        
+        # 三种故障
+        csv_choosing_3 = ['214','238','325']
+        csv_choosing_2 = ['237','260','269','295','336']
+        csv_choosing_1 = ['230','233','298','314']
+        csv_choosing_7 = ['214','238','325','237','260','269','295','336','230','233','298','314']
+        #####
+        #csv_choosing_6 = ['210','214','216','237','243','244','261','273','275','315','338','344']
+        csv_choosing_8 = ['295','336']
+        #####
+        csv_choosing = csv_choosing_8
+
+
+        #label_pick = 'Continuous_3'
+        label_pick = 'Continuous_1'
+        
+        
+        
+        for target in csv_choosing:
+            #path = '/home/tzd/Documents/TZD_py/dataset/SyntheticData/Training-Data/Flight00'+str(target)+'.csv'
+            path = '/home/tzd/Documents/TZD_py/dataset/SyntheticData/Test-Data/Flight00'+str(target)+'.csv'
+            plot_pre(path,label_pick,target)
+```
     
 ### matplotlib坐标轴乱序  
 参考>[plt作图时出现横坐标或者纵坐标乱序的解决方法](https://blog.csdn.net/weixin_43748786/article/details/96432047)    
