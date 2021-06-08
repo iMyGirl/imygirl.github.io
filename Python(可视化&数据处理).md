@@ -512,6 +512,38 @@ print time.strftime('%Y.%m.%d',time.localtime(time.time()-2592000))
 ```
 参见[Python获取并输出当前日期时间](https://www.cnblogs.com/kerwinC/p/5760811.html)
 
+## for 循环
+for循环步长是小数  
+  —— 采用np.arange()
+```
+import numpy as np
+for i in np.arange(0.1, 0.5, 0.01):
+    print(i)
+```
+
+>参见[python处理问题汇总(for循环range内设置小数，四舍五入，时间差，读写文件等)](https://blog.csdn.net/weixin_44052055/article/details/108358654)
+## 矩阵元素的平方根
+
+```
+import numpy
+ 
+array_2d = numpy.array([[1, 4], [9, 16]], dtype=numpy.float)
+ 
+print(array_2d)
+ 
+array_2d_sqrt = numpy.sqrt(array_2d)
+ 
+print(array_2d_sqrt)
+
+# Output
+# [[ 1.  4.]
+#  [ 9. 16.]]
+# [[1. 2.]
+#  [3. 4.]]
+```
+>参见[sqrt numpy_NumPy sqrt（）–矩阵元素的平方根](https://blog.csdn.net/cunchi4221/article/details/107476569)
+
+
 ## 参考文献
 [1][将Python3控制台输出保存到文件的方法](https://blog.csdn.net/qysh123/article/details/98477249)。
 [2][logging --- Python 的日志记录工具— Python 3.9.0 文档](https://docs.python.org/zh-cn/3/library/logging.html)
