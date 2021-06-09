@@ -47,7 +47,8 @@
 
 ## 步骤
 (主要参考此帖[Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8)，并默认安装好ubuntu16.04系统,且计算机为x86架构64位） 
-### 1. 查看显卡是否支持cuda：[地址](https://developer.nvidia.com/cuda-gpus) 
+### 1. 查看显卡是否支持cuda：
+[地址](https://developer.nvidia.com/cuda-gpus) 
   
   
 ### 2. 安装显卡驱动
