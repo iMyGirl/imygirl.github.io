@@ -18,9 +18,9 @@ E-mail： <zidutian@gmail.com>
 [GPU计算相关](https://github.com/iMyGirl/imygirl.github.io/blob/master/GPU%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3.md)  
   
   
-[机器学习_Tensorflow & Keras 常用操作](https://github.com/iMyGirl/imygirl.github.io/blob/master/Machine-Learning_Tensorflow%26Keras%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)
-
-
+[机器学习相关](https://github.com/iMyGirl/imygirl.github.io/blob/master/Machine-Learning.md)
++ [Tesorflow & Keras 常用操作](https://github.com/iMyGirl/imygirl.github.io/blob/master/Machine-Learning.md#tensorflow)
++ [异常检测相关](https://github.com/iMyGirl/imygirl.github.io/blob/master/Machine-Learning.md#machine-learning)
 #### DataSet       
 
 [常见数据集下载](https://github.com/iMyGirl/imygirl.github.io/tree/master/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD)
