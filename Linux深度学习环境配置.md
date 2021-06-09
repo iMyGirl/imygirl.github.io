@@ -1,4 +1,4 @@
-- [Linux深度学习环境配置（ubuntu16.04+nvidia430+cuda8.0.44+cudnn6+anaconda3-5.0.0+tensorflow1.4.0+keras2.1.5）](#Linux深度学习环境配置（ubuntu16.04+nvidia430+cuda8.0.44+cudnn6+anaconda3-5.0.0+tensorflow1.4.0+keras2.1.5）)
+- [Linux深度学习环境配置（ubuntu16.04+nvidia430+cuda8.0.44+cudnn6+anaconda3-5.0.0+tensorflow1.4.0+keras2.1.5）](#Linux深度学习环境配置（ubuntu16-04+nvidia430+cuda8-0-44+cudnn6+anaconda3-5-0-0+tensorflow1-4-0+keras2-1-5）)
   * [写在前面](#写在前面)
   * [步骤](#步骤)
     + [1. 查看显卡是否支持cuda](#1-查看显卡是否支持cuda)
@@ -9,15 +9,14 @@
     + [6. pip安装Tensorflow与keras](#6-pip安装Tensorflow与keras)
     + [7. 测试是否为GPU计算](#7-测试是否为GPU计算)
     + [8. 卸载以上部分数据包](#8-卸载以上部分数据包)
-    + [9. 安装pycharm 或 vscode](#9-安装pycharm 或 vscode)
-  * [下载连接](#----)
+    + [9. 安装pycharm 或 vscode](#9-安装pycharm-或-vscode)
+  * [下载连接](#下载连接)
     + [cuda下载](#cuda下载)
     + [cudnn下载](#cudnn下载-)
     + [anaconda下载](#anaconda下载)
     + [其他链接](#其他链接)
 - [参考文献](#参考文献)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
  
 
 # Linux深度学习环境配置（ubuntu16.04+nvidia430+cuda8.0.44+cudnn6+anaconda3-5.0.0+tensorflow1.4.0+keras2.1.5）
