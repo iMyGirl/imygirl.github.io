@@ -1,3 +1,14 @@
+
+- [Tensorflow](#tensorflow)
+  * [生成Tensor](#--tensor)
+    + [随机生成](#随机生成)
+    + [Tensor操作](#Tensor操作)
+    + [tf转numpy](#tf转numpy)
+  * [保存和恢复模型](#-------)
+- [Machine Learning](#machine-learning)
+    + [异常检测模型指标](#--------)
+
+
 # Tensorflow 
 ## 生成Tensor
 ### 随机生成
