@@ -10,7 +10,7 @@
     + [7. 测试是否为GPU计算](#7-测试是否为GPU计算)
     + [8. 卸载以上部分数据包](#8-卸载以上部分数据包)
     + [9. 安装pycharm 或 vscode](#9-安装pycharm-或-vscode)
-  * [下载连接](#下载连接)
+  * [下载链接](#下载链接)
     + [cuda下载](#cuda下载)
     + [cudnn下载](#cudnn下载-)
     + [anaconda下载](#anaconda下载)
@@ -405,7 +405,7 @@ sudo apt-get install pycharm-community
       
       
 --------------------------------
-## 下载连接
+## 下载链接
 ### cuda下载
 cuda各版本[官方下载地址](https://developer.nvidia.com/cuda-toolkit-archive)  
 选用cuda8.0.44版本[官方下载地址](https://developer.nvidia.com/cuda-80-download-archive)  
