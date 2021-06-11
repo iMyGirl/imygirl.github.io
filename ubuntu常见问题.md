@@ -1,3 +1,8 @@
+# Shell _  命令行
+
+
+# ubuntu常见问题
+
 ## 系统相关  
 
 1. 挂载移动硬盘出错，见文献[1]：
@@ -59,8 +64,6 @@ df -ha # 查看所有文件系统的磁盘空间
 >参见[Linux安装中文输入法（Google拼音输入法）](https://blog.csdn.net/u012308586/article/details/102751329)
 >参考[Linux安装搜狗拼音和谷歌拼音输入法](https://www.jianshu.com/p/429b8f75af2c)  &  [ubuntu利用 im-config安装中文输入法](https://blog.csdn.net/zilaike/article/details/78227938)
 
-    
-    
     
      
 # 参考文献
