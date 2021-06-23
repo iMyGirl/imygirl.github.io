@@ -464,6 +464,11 @@ sys.stderr = Logger('a.log_file', sys.stderr)
 ```
 
 ```
+
+## 主函数调用
+>参见(python中main函数的用法)[https://blog.csdn.net/sinat_38682860/article/details/105139803]
+
+
 ## npy格式转txt 
 参见文献[3]
 ```
