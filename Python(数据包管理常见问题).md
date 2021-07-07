@@ -3,6 +3,7 @@
 参见[Anaconda 换国内源、删源命令](https://blog.csdn.net/kaige2111/article/details/90727476)
       
 ## 常用
+### 增加/查看虚拟环境
 ```
 conda info --envs # 查看当前所有虚拟环境
 conda create -n your_env_name python=x.x   
