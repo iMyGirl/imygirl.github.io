@@ -13,6 +13,10 @@ Linux:  source activate your_env_nam
 Windows: activate your_env_name # 激活不成功，需将your_env_name替换为整个路径
 
 deactivate env_name # 关闭虚拟环境(即从当前环境退出返回使用PATH环境中的默认python版本)
+
+
+#删除虚拟环境
+conda remove -n your_env_name --all
 ```
 参见[Anaconda-用conda创建python虚拟环境](https://zhuanlan.zhihu.com/p/94744929)  
 参见[conda重置环境](https://blog.csdn.net/nima1994/article/details/103064351)  
