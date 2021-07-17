@@ -82,7 +82,10 @@ dpkg --list                                                     # 罗列已安�
 >参见[Linux安装中文输入法（Google拼音输入法）](https://blog.csdn.net/u012308586/article/details/102751329)
 >参考[Linux安装搜狗拼音和谷歌拼音输入法](https://www.jianshu.com/p/429b8f75af2c)  &  [ubuntu利用 im-config安装中文输入法](https://blog.csdn.net/zilaike/article/details/78227938)
 
-    
+6. 安装WPS  
+>参见[Linux下WPS的安装、卸载以及相关问题总结](https://blog.csdn.net/JIEJINQUANIL/article/details/107005585)
+
+
      
 # 参考文献
 [1][ubuntu挂载移动硬盘出现错误 mount:unknown filesystem type exfat](https://www.jb51.net/os/Ubuntu/560860.html)  
