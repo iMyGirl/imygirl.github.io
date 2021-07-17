@@ -42,6 +42,28 @@ df -ha # 查看所有文件系统的磁盘空间
 [NetworkManager设置](https://zhuanlan.zhihu.com/p/52731316)
   
 ## 软件安装  
+### 命令行安装
+>apt-get安装
+
+```
+
+apt-get update                                        # 更新安装列表
+
+apt-get upgrade                                          # 升级软件
+
+apt-get install software_name                             # 安装软件
+
+apt-get --purge remove  software_name                       # 卸载软件及其配置
+
+apt-get autoremove software_name                              # 卸载软件及其依赖的安装包
+
+dpkg --list                                                     # 罗列已安装软件
+
+
+```
+参见[linux apt-get安装和卸载命令](https://blog.csdn.net/renlonggg/article/details/80392989)  
+
+### 具体软件安装
 1. Mendeley导入中文乱码问题:
 >见文献[12]；
 
