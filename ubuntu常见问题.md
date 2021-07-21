@@ -36,7 +36,10 @@ df -ha # 查看所有文件系统的磁盘空间
   '/etc/network/interfaces' 
 ```    
 参考[linux中nmcli命令的使用及网络配置](https://blog.51cto.com/groot/1847482)    &     [Linux网络配置](https://tonydeng.github.io/sdn-handbook/linux/config.html)  &   [NetworkManager设置](https://zhuanlan.zhihu.com/p/52731316)
-  
+
+8. 报错
+参见[zsh: command not found: pip 解决方法 - 码上快乐](https://www.codeprj.com/blog/9d34a11.html)
+
 ## 软件安装  
 ### 命令行安装
 >apt-get安装
