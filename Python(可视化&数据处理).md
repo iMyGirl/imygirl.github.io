@@ -195,8 +195,14 @@ plt.close()
 ### Linux出现乱码的问题
 >[彻底解决matplotlib中文乱码问题](https://blog.csdn.net/dgatiger/article/details/50414549)  
 
-
-
+### Mac中文出现乱码（方框）问题. 
+  
+ ```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+ ```
+>[mac下python matplotlib中文乱码解决方案（亲测可用）！！_小猪佩奇工作室-CSDN博客](https://blog.csdn.net/qq_32590631/article/details/80509741)
 
 ### Terminal运行程序画图问题
 
