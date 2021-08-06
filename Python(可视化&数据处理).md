@@ -4,6 +4,7 @@
   * [Matplotlib 可视化](#Matplotlib可视化)
     + [常用操作](#)
       - [plt.subplots()的返回值是什么？](#pltsubplots)
+      - [配色](#配色)
     + [报错](#报错)
     + [ndarray可视化](#ndarray可视化)
     + [matplotlib坐标轴乱序](#matplotlib坐标轴乱序)
@@ -85,7 +86,7 @@ notebook 5.0.0 --> 6.1.4
 或者  
 
 
-![配色图](img='https://matplotlib.org/stable/_images/sphx_glr_colors_003.png')
+![配色图](https://matplotlib.org/stable/_images/sphx_glr_colors_003.png)
  
 参见  
 >[Specifying Colors — Matplotlib 3.4.2 documentation](https://matplotlib.org/stable/tutorials/colors/colors.html#sphx-glr-tutorials-colors-colors-py)
