@@ -48,6 +48,9 @@ notebook 5.0.0 --> 6.1.4
 参考[解决Altair 在juypter notebook 中安装后，图表不显示问题](https://blog.csdn.net/weixin_33836874/article/details/92120711)  
     
 ## Matplotlib 可视化
+
+
+
 官网地址<https://matplotlib.org>  
 参考[Matplotlib 教程 | 菜鸟教程](https://www.runoob.com/w3cnote/matplotlib-tutorial.html)
 ### 常用操作
@@ -58,12 +61,36 @@ notebook 5.0.0 --> 6.1.4
 参考  
 >[plt.subplot()使用方法以及参数介绍](https://blog.csdn.net/missyougoon/article/details/90543210)  
 [python使用matplotlib:subplot绘制多个子图](https://blog.csdn.net/qq_32791307/article/details/80398982?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=1328626.22839.16154480190410979&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)    
-  
+
+
+
+
 [matplotlib：先搞明白plt. /ax./ fig再画](https://zhuanlan.zhihu.com/p/93423829)  
  plt.subplots()的返回值是什么？  
 参见  
 >[理解fig,ax = plt.subplots()](https://www.cnblogs.com/komean/p/10670619.html)  
-  
+ 
+#### 配色
+
+
++    'b' as blue
++    'g' as green
++    'r' as red
++    'c' as cyan
++    'm' as magenta
++    'y' as yellow
++    'k' as black
++    'w' as white
+
+或者  
+
+
+![配色图](img='https://matplotlib.org/stable/_images/sphx_glr_colors_003.png')
+ 
+参见  
+>[Specifying Colors — Matplotlib 3.4.2 documentation](https://matplotlib.org/stable/tutorials/colors/colors.html#sphx-glr-tutorials-colors-colors-py)
+ 
+ 
 #### ndarray可视化  
 方法一：  
 ```
