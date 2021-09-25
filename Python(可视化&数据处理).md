@@ -535,9 +535,15 @@ data_new.to_csv('data_new.csv')
 ```  
 可参考[怎么将dict保存成csv python](https://jingyan.baidu.com/article/fc07f989cd89b552fee51967.html)[pandas 把字典转换成DataFrame](https://blog.csdn.net/u013061183/article/details/79497254)[python3将dict转为dataframe](https://blog.csdn.net/kkkkkiko/article/details/80957845?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
   
-## 路径读取  
-### 使用glob数据包操作  
->参见[glob.glob() 函数](https://blog.csdn.net/GeorgeAI/article/details/81035422)
+## 路径读取    
+
+### 1. 使用glob数据包操作  
+
+>参见[glob.glob() 函数](https://blog.csdn.net/GeorgeAI/article/details/81035422)  
+
+### 2. 按文件名排序  
+
+[Python文件名排序或文件排序问题_2018魔方的博客-CSDN博客_python 文件排序](https://blog.csdn.net/qq_36481821/article/details/83214167)
 
 ## 时间获取
 ```
