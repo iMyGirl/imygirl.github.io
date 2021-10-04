@@ -9,6 +9,14 @@ ssh-keygen -R 接收方ip
 ```
 *参见[解决 REMOTE HOST IDENTIFICATION HAS CHANGED-百度经验](https://jingyan.baidu.com/article/14bd256e1f20dffb6d2612c0.html)
 
+## scp
+
+```
+scp 本地文件路径 root@139.196.167.187:服务器文件路径
+```
+
+
+*参见[利用ssh传输文件 - jiangyao - 博客园](https://www.cnblogs.com/jiangyao/archive/2011/01/26/1945570.html)
 
 
 
