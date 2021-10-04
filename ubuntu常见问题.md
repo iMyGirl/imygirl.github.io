@@ -1,5 +1,16 @@
 # Shell _  命令行
 
+## ssh
+### 报错
+>REMOTE HOST IDENTIFICATION HAS CHANGED  
+错误的原因是接收方服务器系统做了某些更改，导致登录时会报错  
+```
+ssh-keygen -R 接收方ip
+```
+*参见[解决 REMOTE HOST IDENTIFICATION HAS CHANGED-百度经验](https://jingyan.baidu.com/article/14bd256e1f20dffb6d2612c0.html)
+
+
+
 
 # ubuntu常见问题
 
