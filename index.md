@@ -9,6 +9,17 @@ E-mail： <zidutian@gmail.com>
 
 [playwright_test框架](https://github.com/iMyGirl/imygirl.github.io/blob/master/playwright_test.md)
 
+
+### 生产力工具
+
+[shell&Linux](https://github.com/iMyGirl/imygirl.github.io/blob/master/ubuntu%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
+    
+[Git操作](https://github.com/iMyGirl/Git-Github)  
+
+[windows常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/windows%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
+
+
+
 ### 机器学习（Machine Learning）
 以下整理了机器学习相关的技术博客：
 
@@ -40,15 +51,10 @@ E-mail： <zidutian@gmail.com>
 [UCI machine learning repository](http://archive.ics.uci.edu/ml/index.php)
 >##### 异常检测数据集下载网站
 [Outlier Detection DataSets (ODDS)](http://odds.cs.stonybrook.edu/#table2)
+
+
+
 * * *
-
-### 开发相关
-
-[ubuntu常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/ubuntu%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
-    
-[windows常见问题](https://github.com/iMyGirl/imygirl.github.io/blob/master/windows%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
-      
-[Git操作](https://github.com/iMyGirl/Git-Github)  
 
 
 ### 刷题笔记
