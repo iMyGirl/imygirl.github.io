@@ -51,7 +51,8 @@ E-mail： <zidutian@gmail.com>
 [Git操作](https://github.com/iMyGirl/Git-Github)  
 
 
-
+### 刷题笔记
+<https://gitee.com/imygirl/leetcode/blob/master/README.md#%E7%AE%97%E6%B3%95%E5%88%B7%E9%A2%98>
 
 
 
