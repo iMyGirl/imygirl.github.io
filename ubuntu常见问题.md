@@ -71,7 +71,8 @@ df -ha # 查看所有文件系统的磁盘空间
 9. 查看文件夹内文件大小
 参考<https://jingyan.baidu.com/article/ca2d939d7867e0eb6c31ce80.html>
 
-
+10. 查看隐藏文件
+参考<https://jingyan.baidu.com/article/90895e0fc7650b64ec6b0b84.html>
 
 
 
