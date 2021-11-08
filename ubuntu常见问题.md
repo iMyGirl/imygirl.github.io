@@ -21,7 +21,9 @@ scp 本地文件路径 root@139.196.167.187:服务器文件路径
 
 
 
+# Mac常见问题
 
+[ Mac系统如何显示隐藏文件？ - 知乎](https://www.zhihu.com/question/24635640)
 
 
 
