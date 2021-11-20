@@ -9,7 +9,7 @@ E-mail： <zidutian@gmail.com>
 
 [playwright_test框架](https://github.com/iMyGirl/imygirl.github.io/blob/master/playwright_test.md)
 
-[测试开发](https://gitee.com/imygirl/test-development)
+<https://gitee.com/imygirl/test-development>
 
 
 ### 生产力工具
