@@ -141,6 +141,12 @@ dpkg --list                                                     # 罗列已安�
 >参见[Linux下WPS的安装、卸载以及相关问题总结](https://blog.csdn.net/JIEJINQUANIL/article/details/107005585)
 
 
+
+### 软件推荐
+[三款 Linux 下的 Git 图形客户端 - 知乎](https://zhuanlan.zhihu.com/p/41351705)
+
+
+
      
 # 参考文献
 [1][ubuntu挂载移动硬盘出现错误 mount:unknown filesystem type exfat](https://www.jb51.net/os/Ubuntu/560860.html)  
