@@ -14,7 +14,7 @@ E-mail： <zidutian@gmail.com>
 
 ### 生产力工具
 
-[shell&Linux](https://github.com/iMyGirl/imygirl.github.io/blob/master/ubuntu%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)  
+[shell&Linux](https://github.com/iMyGirl/imygirl.github.io/blob/master/shell&Linux.md)  
     
 [Git操作](https://github.com/iMyGirl/Git-Github)  
 
