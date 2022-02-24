@@ -274,7 +274,11 @@ df.to_csv('tf.csv',index=False)  # 转为.csv文件存储
 #我们能使用列标签来选择列数据。比如，我们想获取 Artist 所在的整列数据, 可以将 artists 当做下标来获取。
 df_pick = df['Artist']
 ```
-
+```
+# 选取多列数据
+# 参考 <https://www.delftstack.com/zh/howto/python-pandas/select-multiple-columns-pandas/>
+df_pick = df[['Artist','Genre','Listeners']]
+```
 ```
 #同样，我们可以使用行标签来获取一列或者多列数据。表格中的下标是数字，比如我们想获取第 1、2 行数据，可以使用 df[1:3] 来拿到数据。
 df_pick = df[1:3]
