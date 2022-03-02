@@ -24,13 +24,49 @@ conda remove -n your_env_name --all
         
 ## 报错  
 
-conda install Python库时报“PackagesNotFoundError:”的错误的解决方案  
+1. conda install Python库时报“PackagesNotFoundError:”的错误的解决方案  
 参见[conda install Python库时报PackagesNotFoundError:的错误的解决方案](https://blog.csdn.net/ewba_gis_rs_er/article/details/84671406)  
   
 查找可安装的版本（以tensorflow-gpu为例）,参考[conda查找安装包的版本以及安装特定版本的包](https://blog.csdn.net/u013517182/article/details/93032900)  
 ```
 conda search tensorflow-gpu
 ```  
+
+2. "CondaHTTPError: HTTP 000 CONNECTION "
+
+```
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
+conda config --append channels https://mirrors.bfsu.edu.cn/anaconda/cloud/fastai/
+conda config --append channels https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/
+conda config --append channels https://mirrors.bfsu.edu.cn/anaconda/cloud/bioconda/
+ 
+
+conda config --set show_channel_urls yes
+```
+
+```
+vim ~/.condarc
+```
+
+```
+# 改为以下内容
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/Paddle/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/fastai/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+show_channel_urls: true
+ssl_verify: false
+```
+
+
+参见[『技术随手学』解决CondaHTTPError: HTTP 000 CONNECTION 问题 - 知乎](https://zhuanlan.zhihu.com/p/260034241)
+
   
             
 ## conda映射至kernel  
