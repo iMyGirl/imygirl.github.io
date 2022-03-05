@@ -67,7 +67,11 @@ ssl_verify: false
 
 参见[『技术随手学』解决CondaHTTPError: HTTP 000 CONNECTION 问题 - 知乎](https://zhuanlan.zhihu.com/p/260034241)
 
-  
+## vscode中更换conda源
+
+
+
+参见[vscode的python环境配置 - SegmentFault 思否](https://segmentfault.com/a/1190000015483593)
             
 ## conda映射至kernel  
 
