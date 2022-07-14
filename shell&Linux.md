@@ -32,6 +32,12 @@
 
 参见[linux 重命名文件和文件夹_千寻～的博客-CSDN博客_linux 文件改名](https://blog.csdn.net/u011630575/article/details/48679613)
 
+```shell
+mv A.md B.md
+```
+
+
+
 
 ## ssh
 ### 报错
