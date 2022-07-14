@@ -1,5 +1,8 @@
 - [Shell _  命令行](#shell-------)
-  * [ssh](#ssh)
+
+ 
+  * [Regular](#Regular)
+  * [ssh](#ssh)     
     + [报错](#报错)
   * [scp](#scp)
 - [Mac常见问题](#mac常见问题)
@@ -21,6 +24,14 @@
 
 
 # Shell _  命令行
+## Regular
+
+### mv
+
+#### 重命名文件/文件夹
+
+参见[linux 重命名文件和文件夹_千寻～的博客-CSDN博客_linux 文件改名](https://blog.csdn.net/u011630575/article/details/48679613)
+
 
 ## ssh
 ### 报错
