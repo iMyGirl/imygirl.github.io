@@ -1,3 +1,21 @@
+- [Shell _  命令行](#shell-------)
+  * [ssh](#ssh)
+    + [报错](#报错)
+  * [scp](#scp)
+- [Mac常见问题](#mac常见问题)
+- [ubuntu常见问题](#ubuntu常见问题)
+  * [系统相关](#系统相关)
+  * [软件安装](#软件安装)
+    + [命令行安装](#命令行安装)
+    + [具体软件安装](#具体软件安装)
+    + [软件推荐](#软件推荐)
+- [参考文献](#----)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
+
 [TOC]
 
 
