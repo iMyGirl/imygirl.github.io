@@ -343,34 +343,58 @@ STATIC_URL = '/static/'
 
 ## 2. Django如何处理URL请求
 
-- 根据setting.py中ROOT_URLCONF找到主路由文件；默认情况下在urls.py，列表`urlpatterns`中应有此配置，进行匹配，匹配成功即调用`视图函数`，匹配不成功报404
+- 根据setting.py中`ROOT_URLCONF`找到主路由文件；默认情况下在urls.py，列表`urlpatterns`中应有此配置，进行匹配，匹配成功即调用`视图函数`，匹配不成功报404
   
   - **视图函数**接受http请求，返回相应内容给浏览器
     
     > def xxx_view(request[,其他参数])：
-    
-    >     ...
-    
+    >     ...   
     > return HttpResponse对象
   
-  项目同名文件夹下/views.py
+  <项目同名文件夹下>/views.py
+  
+  ```python
+  from django.http import HttpResponse
+  
+  def page_2003_view(request):
+  
+      html = '\<h1>这是第一个页面\</h1>'
+      return HttpResponse(html)
+  ```
 
+# P5 路由配置1
 
+### 路由配置-path
 
+- path()函数
 
+- 导入
 
+- 语法-path(route, views, name=None)
 
+- 参数：
+  
+  - route:
+  
+  - views:
+  
+  - name：为地址起别名
+    
+    练习-
 
 # P19 ORM-查询操作-1
 
 - 通过MyModel.objects管理器方法调用查询
 
-| 方法        | 说明            | 用法                    | sql等同               | 返回值           |
-| --------- | ------------- | --------------------- | ------------------- | ------------- |
-| all()     | 查询全部记录        | MyModel.objects.all() | SELECT * FROM tabel | QuerySet（类数组） |
-| get()     | 查询符合条件的单一记录   |                       |                     |               |
-| filter()  | 查询符合条件的多条记录   |                       |                     |               |
-| exclude() | 查询符合条件之外的全部记录 |                       |                     |               |
+| 方法            | 说明            | 用法                                 | sql等同                     | 返回值           |
+| ------------- | ------------- | ---------------------------------- | ------------------------- | ------------- |
+| all()         | 查询全部记录        | MyModel.objects.all()              | SELECT * FROM tabel       | QuerySet（类数组） |
+| get()         | 查询符合条件的单一记录   |                                    |                           |               |
+| filter()      | 查询符合条件的多条记录   |                                    |                           |               |
+| exclude()     | 查询符合条件之外的全部记录 |                                    |                           |               |
+| values()      |               | MyModel.objects.values()           | SELECT 列名1，列名2 FROM tabel | QuerySet(字典)  |
+| values_list() |               | MyModel.objects.values_list()      | SELECT 列名1，列名2 FROM tabel | QuerySet(元组)  |
+| order_by()    |               | MyModel.objects.order_by('-列'，'列') |                           |               |
 
 -----------------
 
@@ -389,5 +413,3 @@ https://www.bilibili.com/video/BV1NL41157ph?spm_id_from=333.337.search-card.all.
 - 操作表中的数据（不用写sql）
 
 ## Django连接数据库
-
-
